@@ -165,7 +165,7 @@
 	        <form class="animalcareapp">
 	        	<div class="form-group">
 	                <label>Are you vaccinated for Rabies?</label>
-	                <select id="selecttype" class="form-control">
+	                <select name="rabibesvac" id="selecttype" class="form-control">
 	                    <option>-Select-</option>
 	                    <option>Yes</option>
 	                    <option>No</option>
@@ -173,7 +173,7 @@
 	            </div>
 	           	<div class="form-group">
 	                <label>Do you hold a valid permit to rehabilitate wildlife in the state of Viginia?</label>
-	                <select id="selecttype" class="form-control">
+	                <select name="validpermit" id="selecttype" class="form-control">
 	                    <option>-Select-</option>
 	                    <option>No</option>
 	                    <option>Permit 1</option>
@@ -191,17 +191,17 @@
 	<!--EMERGENCY NAME INPUT-->
 	            <div class="form-group">
 	                <label>Name</label>
-	                <input class="form-control" id="inputemergencyname" placeholder="First and last" required>
+	                <input name="emergencyname" class="form-control" id="inputemergencyname" placeholder="First and last" required>
 	            </div>
 	<!--EMERGENCY EMAIL INPUT-->
 	            <div class="form-group">
 	                <label>Phone</label>
-	                <input class="form-control" id="inputemergencyemail" required>
+	                <input name="emergencyemail" class="form-control" id="inputemergencyemail" required>
 	            </div>
 	<!--EMERGENCY ADDRESS INPUT-->
 	            <div class="form-group">
 	                <label>Relationship</label>
-	                <input class="form-control" id="inputemergencyaddress">
+	                <input name="emergencyaddress" class="form-control" id="inputemergencyaddress">
 	            </div>
 	            <br>
 <!--EXPERIENCE AND REQUIREMENTS-->
@@ -209,28 +209,28 @@
 		        <br>
 	            <div class="form-group">
 	                <label>Please briefly describe your relevant hands-on experience with animals, if any. What did you enjoy about the experience? What did you dislike?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea name="relexperience" class="form-control" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Carnivorous patients are sometimes unable to eat food items whole due to their injuries; you may be required to cut and divide dead rodents, chicks, and fishes into smaller portions. Are you comfortable handling dead animals for this purpose?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea name="cutfood" class="form-control" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Prior to release from the Wildlife Center, many predatory birds are presented with live mice in order to evaluate their ability to capture prey in a controlled and measurable environment. What is your opinion on using live-prey for this purpose?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea name="livepreyopinion" class="form-control" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Wildlife rehabilitation requires daily outdoor work -- year-round and regardless of weather conditions. Are you able to work outside during all seasons? If not, what are your limitations?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea name="workallseasons" class="form-control" rows="5"></textarea>
 	            </div>
         	</form>
         	<form class="animalcareapp">
 	            <div class="form-group">
 	                <label>Are you able to lift 40 pounds on potentially uneven surfaces with minimal assistance?</label>
-	                <select id="selecttype" class="form-control">
+	                <select name="lift40pounds" id="selecttype" class="form-control">
 	                    <option>-Select-</option>
 	                    <option id="yes">Yes</option>
 	                    <option id="no">No</option>
