@@ -38,7 +38,6 @@
     <br>
     <div class="row" id="application">
         <div class="col-xs-12">
-
 <!--GENERAL INFORMATION-->
 		        <h3 class="applicationheader" id="generalinfo">General Information</h3>
 		        <br>
@@ -100,50 +99,90 @@
 	        	<!--AVAILABILITY-->          
 		    <form class="animalcareapp">
 	       		<div class="form-group">
-	                <label>What days of the week are you available, and at what times?</label>
+	                <label>What days of the week are you available?</label>
 	                <br>
-						<label class="checkbox-inline">
-						<input type="checkbox" id="monday" value="option1">Mon
-						</label>
-						<input class="form-control" id="mondayavailability">
-						<br>
+	                	<div>
+							<label class="checkbox-inline">
+							<input type="checkbox" id="monday" value="option1">Mon
+							</label>
+							<br>
+						</div>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="tuesday" value="option2">Tues
 						</label>
-						<input class="form-control" id="tuesdayavailability">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="wednesday" value="option3">Wed
 						</label>
-						<input class="form-control" id="wednesdayavailability">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="thusday" value="option4">Thurs
 						</label>
-						<input class="form-control" id="thurdayavailability">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="friday" value="option5">Fri
 						</label>
-						<input class="form-control" id="fridayavailability">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="saturday" value="option6">Sat
 						</label>
-						<input class="form-control" id="saturdayavailability">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="sunday" value="option7">Sun
+						</label>	
+	            </div>
+	           	<label>Season availability (check all for year round)</label>
+	                <br>
+	                	<div>
+							<label class="checkbox-inline">
+							<input type="checkbox" id="monday" value="option1">Spring
+							</label>
+							<br>
+						</div>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="tuesday" value="option2">Summer
 						</label>
-						<input class="form-control" id="sundayavailability">	
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="wednesday" value="option3">Fall
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="thusday" value="option4">Winter
+						</label>
+					</label>	
+	        </form>
+	        <br>
+	        <form class="animalcareapp">
+	        	<div class="form-group">
+	                <label>Are you vaccinated for Rabies?</label>
+	                <select id="selecttype" class="form-control">
+	                    <option>-Select-</option>
+	                    <option>Yes</option>
+	                    <option>No</option>
+	                </select>
+	            </div>
+	           	<div class="form-group">
+	                <label>Do you hold a valid permit to rehabilitate wildlife in the state of Viginia?</label>
+	                <select id="selecttype" class="form-control">
+	                    <option>-Select-</option>
+	                    <option>No</option>
+	                    <option>Permit 1</option>
+	                    <option>Permit 2</option>
+	                    <option>Permit 4</option>
+	                </select>
 	            </div>
 	        </form>
+	        <br>
 
 <!--EMERGENCY CONTACT-->
 			<form>
