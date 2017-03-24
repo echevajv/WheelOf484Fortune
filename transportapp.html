@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Volunteer Website for The Virginia Wildlfe Center">
+    <meta name="author" content="Ryan Spitzel, Faith Ripa">
+
+    <title>Transport and Rescue App</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--APPLICATION-->
+    <div class="row" id="application">
+        <div class="col-xs-12">
+            <div class="backbuttonapp" id="back">
+                <div class="col-xs-12 text-left">
+                    <a href="volunteeropportunities.html" id="backbuttonapp"><strong>Back</strong></a>
+                </div>
+                <!--END COL XS 12-->
+            </div>
+            <!--END BACK BUTTON APP-->
+            <div id="careappinfo">
+                <h1 id="applicationmainheader">Transport + Rescue Volunteer Application</h1>
+                <br>
+                <p id="careappinfotext">Volunteer transporters provide a vital service to both the Wildlife Center of Virginia and the community by facilitating the rescue of wild animals. We appreciate that our volunteer transporters share the use of their vehicles, cost of gasoline, and valuable time to assist wildlife. Volunteer transporters provide a life-saving service.
+                <br>
+                <br>
+				If you’d like to join this pool of volunteers, please fill out this form. After we receive your application, we will send you an email additional information. Unless you otherwise specify, we will add you to our active referral list immediately and you may be start receiving calls from the public for transport help right away, or you may not get any calls for six months or more. </p> 
+            </div>
+            <!--END CARE APP INFO-->
+        </div>
+        <!--END COL XS 12-->
+    </div>
+    <!--END ROW-->
+    <br>
+    <div class="row" id="application">
+        <div class="col-xs-12">
+<!--GENERAL INFORMATION-->
+		        <h3 class="applicationheader" id="generalinfo">General Information</h3>
+		        <br>
+	<!--NAME INPUT-->
+				<form class="transportapp">
+					<div class="form-group">
+						<label>First name</label>
+						<br>
+						<input type="text" class="form-control" id="inputfirstname">
+					</div>
+					<div class="form-group">
+						<label>Last name</label>
+						<br>
+						<input type="email" class="form-control" id="inputlastname">
+					</div>
+				</form>
+				<br>
+				<form class="transportapp">
+	<!--EMAIL INPUT-->	            
+	            <div class="form-group">
+	                <label>Email</label>
+	                <input class="form-control" id="inputemail" required>
+	            </div>
+	<!--ADDRESS INPUT-->	            
+	            <div class="form-group">
+	                <label>Address</label>
+	                <input class="form-control" id="inputaddress" required>
+	            </div>
+	<!--CITY INPUT-->	            
+	            <div class="form-group">
+	                <label>City</label>
+	                <input class="form-control" id="inputcity">
+	            </div>
+	<!--STATE INPUT-->
+	            <div class="form-group">
+	                <label>State</label>
+	                <input class="form-control" id="inputstate">
+	            </div>
+	<!--ZIP CODE INPUT-->
+	            <div class="form-group">
+	                <label>Zip Code</label>
+	                <input class="form-control" id="inputzipcode">
+	            </div>
+	<!--PHONE INPUT-->
+	            <div class="form-group">
+	                <label>Phone</label>
+	                <input class="form-control" id="inputphone">
+	            </div>
+	<!--DOB INPUT-->
+			<form class="transportapp">
+				<div class="form-group">
+					<label>Date of Birth</label>
+					<br>
+					<input type="date" class="form-control" id="dateofbirth">
+					</form>
+	        	    <br>
+	        	</div>
+	        </form>
+	        	<!--AVAILABILITY-->          
+		    <form class="transportapp">
+	       		<div class="form-group">
+	                <label>What days of the week are you available?</label>
+	                <br>
+	                	<div>
+							<label class="checkbox-inline">
+							<input type="checkbox" id="monday" value="option1">Mon
+							</label>
+							<br>
+						</div>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="tuesday" value="option2">Tues
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="wednesday" value="option3">Wed
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="thusday" value="option4">Thurs
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="friday" value="option5">Fri
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="saturday" value="option6">Sat
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="sunday" value="option7">Sun
+						</label>	
+	            </div>
+	           	<label>Season availability (check all for year round)</label>
+	                <br>
+	                	<div>
+							<label class="checkbox-inline">
+							<input type="checkbox" id="monday" value="option1">Spring
+							</label>
+							<br>
+						</div>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="tuesday" value="option2">Summer
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="wednesday" value="option3">Fall
+						</label>
+						<br>
+
+						<label class="checkbox-inline">
+						<input type="checkbox" id="thusday" value="option4">Winter
+						</label>
+					</label>	
+	        </form>
+	        <br>
+	        <form class="transportapp">
+	        	<div class="form-group">
+	                <label>Are you vaccinated for Rabies?</label>
+	                <select id="selecttype" class="form-control">
+	                    <option>-Select-</option>
+	                    <option>Yes</option>
+	                    <option>No</option>
+	                </select>
+	            </div>
+	           	<div class="form-group">
+	                <label>Do you hold a valid permit to rehabilitate wildlife in the state of Viginia?</label>
+	                <select id="selecttype" class="form-control">
+	                    <option>-Select-</option>
+	                    <option>No</option>
+	                    <option>Permit 1</option>
+	                    <option>Permit 2</option>
+	                    <option>Permit 4</option>
+	                </select>
+	            </div>
+	        </form>
+	        <br>
+
+<!--EMERGENCY CONTACT-->
+			<form>
+		        <h3 class="applicationheader" id="emergencyinfo">Emergency Contact Information</h3>
+		        <br>
+	<!--EMERGENCY NAME INPUT-->
+	            <div class="form-group">
+	                <label>Name</label>
+	                <input class="form-control" id="inputemergencyname" placeholder="First and last" required>
+	            </div>
+	<!--EMERGENCY EMAIL INPUT-->
+	            <div class="form-group">
+	                <label>Phone</label>
+	                <input class="form-control" id="inputemergencyemail" required>
+	            </div>
+	<!--EMERGENCY ADDRESS INPUT-->
+	            <div class="form-group">
+	                <label>Relationship</label>
+	                <input class="form-control" id="inputemergencyaddress">
+	            </div>
+	            <br>
+
+<!--ADDITIONAL REQUIREMENTS-->
+	        <h3 class="applicationheader" id="additionalinfo">Additional Information</h3>
+	        <br>
+	        <form class="transportapp">
+	            <div class="form-group">
+	                <label>How far are you willing to travel for transport (i.e., 30-45 miles from your location, to a specific location, etc)?</label>
+	                <textarea class="form-control" rows="5"></textarea>
+	            </div>
+	        </form>
+	         <br>
+	        <form class="transportapp">
+	            <div class="form-group">
+	                <label>Please list all food and animal allergies, if any</label>
+	                <textarea class="form-control" rows="5"></textarea>
+	            </div>
+	        </form>
+	        <br>
+	<!--AVAILABILITY INPUT-->
+	        <form class="transportapp">
+	       		<div class="form-group">
+	                <label>When are you able to transport animals?</label>
+	                <br>
+						<label class="checkbox-inline">
+						<input type="checkbox" id="weekdays" value="option1">Weekdays
+						</label>
+						<label class="checkbox-inline">
+						<input type="checkbox" id="weekends" value="option2">Weekends
+						</label>
+						<label class="checkbox-inline">
+						<input type="checkbox" id="anytime" value="option3">Any time
+						</label>
+						<br>
+	            </div>
+	        </form>
+	        <br>
+	    </div>
+	</div>
+	<br>
+
+<!--APPLICATION-->
+    <div class="row" id="application">
+        <div class="col-xs-12">
+            <div id="careappinfo">
+                <h1 id="applicationmainheader">Capturing Wildlife</h1>
+                <br>
+                <p id="careappinfotext">Sometimes rescuers need assistance with capturing and containing a wild animal in need.  For those who are interested in capturing injured animals:</p> 
+                <br>
+                <ul id="careappinfotext">
+                <li>
+				Know that we do not ask transporters to attempt risky captures of dangerous animals. Also, as a volunteer, you can always say “no” if you are uncomfortable with a situation.
+				</li>
+				<br>
+				<li>
+				If you are considering attempting a capture/rescue, we are available by phone to give advice on the best way to go about attempting a rescue safely.
+				</li>
+				<br>
+				<li>
+				We can advise you on any particularly helpful items or equipment to take with you.
+				</li>
+				<br>
+				<li>
+				We have humane live traps available to assist you, if needed.
+				</li>
+				<br>
+				</ul>
+				<p id="careappinfotext">Several times throughout the year, we offer a wildlife rehabilitation training class called Wildlife Capture, Restraint, Handling, and Transport. This class is taught both online and in-person at locations throughout Virginia. This class is free to our registered volunteer transporters and is an excellent way to build skills and confidence for capturing animals. We will email you when this class is available.</p> 
+			<br>
+           	<form class="transportapp">
+	       		<div class="form-group">
+	                <label>With that in mind, would you be willing to assist with capturing animals, if needed?</label>
+	                <br>
+					<label class="checkbox-inline">
+					<input type="checkbox" id="capture" value="option1">Yes, I am willing to help capture animals.
+					</label>
+					<br>
+					<label class="checkbox-inline">
+					<input type="checkbox" id="transport" value="option2">No, I'd prefer to strictly transport.
+					</label>
+					<br>
+					<hr>
+					<label class="checkbox-inline">
+					<input type="checkbox" id="acceptterms" value="option2"> I am acknowledging that I have read the transporter guidelines and I promise to abide by these guidelines when I transport for the Wildlife Center of Virginia.
+					</label>
+					<hr>
+				</div>
+	        </form>
+
+	        </div>
+            <!--END CARE APP INFO-->
+
+<!--SUBMIT BUTTON-->
+	        <a href="thankyou.html" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
+        </div>
+        <!--END COL XS 12-->
+    </div>
+    <!--END ROW APPLICATION-->
+
+</body>
+</html>
