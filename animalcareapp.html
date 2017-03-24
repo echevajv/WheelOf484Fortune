@@ -51,7 +51,7 @@
 					<div class="form-group">
 					<label>Last name</label>
 					<br>
-					<input type="email" class="form-control" id="inputlastname">
+					<input type="email" class="form-control" id="inputlastname" name="lastname" required>
 					</div>
 				</form>
 				<br>
@@ -59,39 +59,39 @@
 	<!--EMAIL INPUT-->	            
 	            <div class="form-group">
 	                <label>Email</label>
-	                <input class="form-control" id="inputemail" required>
+	                <input class="form-control" id="inputemail" name="email" required>
 	            </div>
 	<!--ADDRESS INPUT-->	            
 	            <div class="form-group">
 	                <label>Address</label>
-	                <input class="form-control" id="inputaddress" required>
+	                <input class="form-control" id="inputaddress" name="address" required>
 	            </div>
 	<!--CITY INPUT-->	            
 	            <div class="form-group">
 	                <label>City</label>
-	                <input class="form-control" id="inputcity">
+	                <input class="form-control" id="inputcity" name="city" required>
 	            </div>
 	<!--STATE INPUT-->
 	            <div class="form-group">
 	                <label>State</label>
-	                <input class="form-control" id="inputstate">
+	                <input class="form-control" id="inputstate"  name="state" required>
 	            </div>
 	<!--ZIP CODE INPUT-->
 	            <div class="form-group">
 	                <label>Zip Code</label>
-	                <input class="form-control" id="inputzipcode">
+	                <input class="form-control" id="inputzipcode" name="zipcode" required>
 	            </div>
 	<!--PHONE INPUT-->
 	            <div class="form-group">
 	                <label>Phone</label>
-	                <input class="form-control" id="inputphone">
+	                <input class="form-control" id="inputphone" name="phone" required>
 	            </div>
 	<!--DOB INPUT-->
 			<form class="animalcareapp">
 				<div class="form-group">
 					<label>Date of Birth</label>
 					<br>
-					<input type="date" class="form-control" id="dateofbirth">
+					<input type="date" class="form-control" id="dateofbirth" name="dateofbirth" required>
 					</form>
 	        	    <br>
 	        	</div>
@@ -103,61 +103,61 @@
 	                <br>
 	                	<div>
 							<label class="checkbox-inline">
-							<input type="checkbox" id="monday" value="option1">Mon
+							<input type="checkbox" id="monday" name="checkmon" value="option1">Mon
 							</label>
 							<br>
 						</div>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="tuesday" value="option2">Tues
+						<input type="checkbox" id="tuesday" name="checktue" value="option2">Tues
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="wednesday" value="option3">Wed
+						<input type="checkbox" id="wednesday" name="checkwed" value="option3">Wed
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="thusday" value="option4">Thurs
+						<input type="checkbox" id="thusday" name="checkthu" value="option4">Thurs
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="friday" value="option5">Fri
+						<input type="checkbox" id="friday" name="checkfri" value="option5">Fri
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="saturday" value="option6">Sat
+						<input type="checkbox" id="saturday" name="checksat" value="option6">Sat
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="sunday" value="option7">Sun
+						<input type="checkbox" id="sunday" name="checksun" value="option7">Sun
 						</label>	
 	            </div>
 	           	<label>Season availability (check all for year round)</label>
 	                <br>
 	                	<div>
 							<label class="checkbox-inline">
-							<input type="checkbox" id="monday" value="option1">Spring
+							<input type="checkbox" id="spring" name="checkspring" value="option1">Spring
 							</label>
 							<br>
 						</div>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="tuesday" value="option2">Summer
+						<input type="checkbox" id="summer" name="checksummer" value="option2">Summer
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="wednesday" value="option3">Fall
+						<input type="checkbox" id="fall" name="checkfall" value="option3">Fall
 						</label>
 						<br>
 
 						<label class="checkbox-inline">
-						<input type="checkbox" id="thusday" value="option4">Winter
+						<input type="checkbox" id="winter" name="checkwinter" value="option4">Winter
 						</label>
 					</label>	
 	        </form>
@@ -165,7 +165,7 @@
 	        <form class="animalcareapp">
 	        	<div class="form-group">
 	                <label>Are you vaccinated for Rabies?</label>
-	                <select id="selecttype" class="form-control">
+	                <select id="selecttype" name="rabiesvac" class="form-control">
 	                    <option>-Select-</option>
 	                    <option>Yes</option>
 	                    <option>No</option>
@@ -173,7 +173,7 @@
 	            </div>
 	           	<div class="form-group">
 	                <label>Do you hold a valid permit to rehabilitate wildlife in the state of Viginia?</label>
-	                <select id="selecttype" class="form-control">
+	                <select id="selecttype" name="validpermit" class="form-control">
 	                    <option>-Select-</option>
 	                    <option>No</option>
 	                    <option>Permit 1</option>
@@ -191,17 +191,17 @@
 	<!--EMERGENCY NAME INPUT-->
 	            <div class="form-group">
 	                <label>Name</label>
-	                <input class="form-control" id="inputemergencyname" placeholder="First and last" required>
+	                <input class="form-control" name="emergencyname" id="inputemergencyname" placeholder="First and last" required>
 	            </div>
 	<!--EMERGENCY EMAIL INPUT-->
 	            <div class="form-group">
 	                <label>Phone</label>
-	                <input class="form-control" id="inputemergencyemail" required>
+	                <input class="form-control" name="emergencyemail" id="inputemergencyemail" required>
 	            </div>
 	<!--EMERGENCY ADDRESS INPUT-->
 	            <div class="form-group">
 	                <label>Relationship</label>
-	                <input class="form-control" id="inputemergencyaddress">
+	                <input class="form-control" name="emergencyaddress" id="inputemergencyaddress">
 	            </div>
 	            <br>
 <!--EXPERIENCE AND REQUIREMENTS-->
@@ -209,28 +209,28 @@
 		        <br>
 	            <div class="form-group">
 	                <label>Please briefly describe your relevant hands-on experience with animals, if any. What did you enjoy about the experience? What did you dislike?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="relexperience" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Carnivorous patients are sometimes unable to eat food items whole due to their injuries; you may be required to cut and divide dead rodents, chicks, and fishes into smaller portions. Are you comfortable handling dead animals for this purpose?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="cutfood" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Prior to release from the Wildlife Center, many predatory birds are presented with live mice in order to evaluate their ability to capture prey in a controlled and measurable environment. What is your opinion on using live-prey for this purpose?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="livepreyopinion" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Wildlife rehabilitation requires daily outdoor work -- year-round and regardless of weather conditions. Are you able to work outside during all seasons? If not, what are your limitations?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="workallseasons" rows="5"></textarea>
 	            </div>
         	</form>
         	<form class="animalcareapp">
 	            <div class="form-group">
 	                <label>Are you able to lift 40 pounds on potentially uneven surfaces with minimal assistance?</label>
-	                <select id="selecttype" class="form-control">
+	                <select id="selecttype" name="lift40pounds" class="form-control">
 	                    <option>-Select-</option>
 	                    <option id="yes">Yes</option>
 	                    <option id="no">No</option>
@@ -239,7 +239,7 @@
 	            <br>
 	            <div class="form-group">
 	                <label>If not, are you willing to become vaccinated at your own cost?</label>
-	                <select id="selecttype" class="form-control">
+	                <select id="selecttype" name="willingvac" class="form-control">
 	                    <option>-Select-</option>
 	                    <option>Yes</option>
 	                    <option>No</option>
@@ -250,7 +250,7 @@
 	        <form class="animalcareapp">
 	            <div class="form-group">
 	                <label>Please list all food and animal allergies, if any</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="allergies" rows="5"></textarea>
 	            </div>
 	        </form>
 	        <br>
@@ -258,7 +258,7 @@
 	        <form class="animalcareapp">
 	            <div class="form-group">
 	                <label>Will you be able to commit to either a six-month or one-year schedule, with at least one shift (four hours) per week?</label>
-	                <select id="selecttype" class="form-control">
+	                <select id="selecttype" name="commitschedule" class="form-control">
 	                    <option>-Select-</option>
 	                    <option>Yes</option>
 	                    <option>No</option>
@@ -269,22 +269,22 @@
 	        <form class="animalcareapp">
 	            <div class="form-group">
 	                <label>Do you belong to any animal rights groups (PETA, The Humane Society, etc.)? If so, which ones?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="groupsinfo" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>What do you hope to learn or accomplish by volunteering at the Wildlife Center of Virginia?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="learninfo" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Please describe an environmental or wildlife-based issue you feel passionately about, and why:</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="passioninfo" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Is there anything else that you’d like us to know about yourself or your experience?</label>
-	                <textarea class="form-control" rows="5"></textarea>
+	                <textarea class="form-control" name="otherinfo" rows="5"></textarea>
 	            </div>
 	            <br>
 
@@ -294,13 +294,13 @@
 	<!--RESUME UPLOAD-->	            
 	            <div class="form-group">
 	                <label for="exampleInputFile">Resume or CV</label>
-	                <input type="file" id="resumeupload">
+	                <input type="file" name="resume" id="resumeupload">
 	                <p class="help-block">This should include information about your education and relevant work history</p>
 	            </div>
 	<!--LETTER OF REC UPLOAD-->	            
 	            <div class="form-group">
 	                <label for="exampleInputFile">Letter of Recommendation</label>
-	                <input type="file" id="letterofrecupload">
+	                <input type="file" name="letterofrec" id="letterofrecupload">
 	            </div>
 	            <br>
 
