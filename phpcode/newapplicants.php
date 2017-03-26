@@ -2,6 +2,7 @@
 session_start();
 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +62,7 @@ session_start();
                                 <th class="text-center"><strong>Date Applied</strong></th>
                                 <th class="text-center"><strong></strong></th>
                             </tr>
-                            <?php PopulateTable() ?>
+                            <?php PopulateTable('applicant') ?>
                         </table>
                         <p>PHP HERE for no applicant</p>
                     </div>
@@ -89,11 +90,7 @@ session_start();
                                     <th class="text-center"><strong>Date Applied</strong></th>
                                     <th class="text-center"><strong></strong></th>
                                 </tr>
-                                <tr class="text-center" id="applicantdata">
-                                    <td>Josh Doe</td>
-                                    <td>2/13/17</td>
-                                    <td><a href="newapplicantanimalcare.php" id="viewapplicantbutton">View</td>
-                                </tr>
+                                <?php PopulateTables('rejected'); ?>
                             </table>
                         </div>
                         <!--END PANEL BODY-->
@@ -111,12 +108,12 @@ session_start();
 </html>
 
 <?php
-Function PopulateTable (){
+Function PopulateTable ($status){
     $server = "localhost";
     $user = "root";
     $password = "Dr590215";
     $database = "wildlife";
-    $query = "Select concat_ws(' ', firstname, lastname), dateapplied from person where status like 'pending';";
+    $query = "Select concat_ws(' ', firstname, lastname), dateapplied from person where status like '$status';";
     $con = mysql_connect($server, $user, $password);
     if (!empty($con)){
         //echo "Connected Successfully";
