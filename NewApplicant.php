@@ -1,4 +1,4 @@
-
+    
     <!DOCTYPE html>
     <html>
     <head>
@@ -18,6 +18,7 @@
 
     <!--APPLICATION-->
     <div class="row" id="application">
+
         <div class="col-xs-12">
             <div class="backbuttonapp" id="back">
                 <div class="col-xs-12 text-left">
@@ -45,7 +46,8 @@
                 <div class="form-group">
                     <label>First name:<p>
                             <?php
-                            ProcessQuery("FirstName","Person",1);
+                            $PersonID = 1;
+                            ProcessQuery("FirstName","Person",$PersonID);
                             ?>
                         </p></label>
                     <br>
@@ -53,7 +55,7 @@
                 <div class="form-group">
                     <label>Last name:<p>
                             <?php
-                            ProcessQuery("LastName","Person",1);
+                            ProcessQuery("LastName","Person",$PersonID);
                             ?>
                         </p></label>
                     <br>
@@ -64,7 +66,7 @@
                 <div class="form-group">
                     <label>Email:<p>
                             <?php
-                            ProcessQuery("Email","Person",1);
+                            ProcessQuery("Email","Person",$PersonID);
                             ?>
                         </p></label>
                 </div>
@@ -72,7 +74,7 @@
                 <div class="form-group">
                     <label>Address:<p>
                             <?php
-                            ProcessQuery("Address","Person",1);
+                            ProcessQuery("Address","Person",$PersonID);
                             ?>
                         </p></label>
                 </div>
@@ -80,7 +82,7 @@
                 <div class="form-group">
                     <label>City:<p>
                             <?php
-                            ProcessQuery("City","Person",1);
+                            ProcessQuery("City","Person",$PersonID);
                             ?>
                         </p></label>
                 </div>
@@ -88,7 +90,7 @@
                 <div class="form-group">
                     <label>State:<p>
                             <?php
-                            ProcessQuery("State","Person",1);
+                            ProcessQuery("State","Person",$PersonID);
                             ?>
                         </p></label>
                 </div>
@@ -96,7 +98,7 @@
                 <div class="form-group">
                     <label>Zip Code:<p>
                             <?php
-                            ProcessQuery("ZipCode","Person",1);
+                            ProcessQuery("ZipCode","Person",$PersonID);
                             ?>
                         </p></label>
                 </div>
@@ -104,7 +106,7 @@
                 <div class="form-group">
                     <label>Phone:<p>
                             <?php
-                            ProcessQuery("Phone","Person",1);
+                            ProcessQuery("Phone","Person",$PersonID);
                             ?>
                         </p></label>
                 </div>
@@ -113,7 +115,7 @@
                     <div class="form-group">
                         <label>Date of Birth:<p>
                                 <?php
-                                ProcessQuery("DateOfBirth","Person",1);
+                                ProcessQuery("DateOfBirth","Person",$PersonID);
                                 ?>
                             </p></label>
                         <br>
@@ -130,7 +132,7 @@
             <label>Season availability (check all for year round)</label>
             <p>
                 <?php
-                ProcessQuery("SeasonAvailability","Person",1);
+                ProcessQuery("SeasonAvailability","Person",$PersonID);
                 ?>
             </p>
             <br>
@@ -141,7 +143,7 @@
                 <label>Are you vaccinated for Rabies?</label>
                 <p>
                     <?php
-                    ProcessQuery("RabiesVaccinated","Person",1);
+                    ProcessQuery("RabiesVaccinated","Person",$PersonID);
                     ?>
                 </p>
             </div>
@@ -149,7 +151,7 @@
                 <label>Do you hold a valid permit to rehabilitate wildlife in the state of Viginia?</label>
                 <p>
                     <?php
-                    ProcessQuery("ValidPermit","Person",1);
+                    ProcessQuery("ValidPermit","Person",$PersonID);
                     ?>
                 </p>
             </div>
@@ -165,7 +167,7 @@
                 <label>Name:</label>
                 <p>
                     <?php
-                    ProcessQuery("Name","EmergencyContact",1)
+                    ProcessQuery("Name","EmergencyContact",$PersonID)
                     ?>
                 </p>
             </div>
@@ -174,7 +176,7 @@
                 <label>Phone:</label>
                 <p>
                     <?php
-                    ProcessQuery("Phone","EmergencyContact",1)
+                    ProcessQuery("Phone","EmergencyContact",$PersonID)
                     ?>
                 </p>
             </div>
@@ -183,7 +185,7 @@
                 <label>Relationship:</label>
                 <p>
                     <?php
-                    ProcessQuery("Relationship","EmergencyContact",1)
+                    ProcessQuery("Relationship","EmergencyContact",$PersonID)
                     ?>
                 </p>
             </div>
