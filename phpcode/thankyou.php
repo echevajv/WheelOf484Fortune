@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body id="loginbody">
+
+<!--BACKGROUND IMAGES-->
+	<div class="row">
+		<img src="images/sun.png" id="sun">
+		<img src="images/trees.png" id="trees">
+	</div>
+	<!--END ROW-->
+
+<!--THANK YOU BOX-->
+	<div id="allcontentthankyou">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="login-panel panel panel-default">
+					<div class="panel-heading" id="panelheading">Thank You For Applying!</div>
+					<div class="panel-body">POST STUFF
+					<table>
+<?php 
+    // show all post variables
+
+    foreach ($_POST as $key => $value) {
+        echo "<tr>";
+        echo "<td>";
+        echo $key;
+        echo "</td>";
+        echo "<td>";
+        echo $value;
+        echo "</td>";
+        echo "</tr>";
+    }
+
+
+?>
+</table>
+						<p id="thankyoutext">Once we receive your application, the front-desk staff will email applicants with additional information. Unless otherwise specified, applicants will be added to the active referral list immediately.
+						<br>
+						<br> 
+						New transport volunteers may receive calls from the public for transport assistance right away, or it may be several months until the first call. 
+						<br>
+						<br>
+						Thanks for your interest in volunteering with the Wildlife Center of Virginia!</p>
+					</div>
+					<!--END PANEL BODY-->
+					<div class="text-right">
+						<a href="index.php" class="btn btn-primary" id="backtologinbutton">Back To Login Page</a>
+					</div>
+					<!--END TEXT RIGHT-->
+				</div>
+				<!--END LOGIN PANEL-->
+			</div>
+			<!--END XS 12-->
+		</div>
+		<!--END ROW-->
+	</div>
+	<!--END ALL CONTENT THANKYOU-->
+														    }
+</body>
+
+</html>
