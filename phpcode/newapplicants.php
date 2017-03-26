@@ -17,6 +17,9 @@ session_start();
 </head>
 
 <body id="admindashboardbody">
+    <div class="row">
+        <img src="images/trees.png" id="treespositions">
+    </div>
 <!--ALL COLUMNS-->
 <div class="container-fluid" id="admindashboard">
     <div class="row">
