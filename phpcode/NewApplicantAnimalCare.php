@@ -15,10 +15,6 @@
 </head>
 
 <body>
-    
-<div class="row">
-    <img src="images/trees.png" id="treespositions">
-</div>
 
 <!--APPLICATION-->
 <div class="row" id="application">
@@ -50,7 +46,7 @@
             <div class="form-group">
                 <label>First name:<p>
                         <?php
-
+                        $PersonID = $_GET["id"];
                         ProcessQuery("FirstName","Person",$PersonID);
                         ?>
                     </p></label>
