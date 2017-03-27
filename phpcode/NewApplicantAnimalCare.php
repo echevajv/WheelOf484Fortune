@@ -44,9 +44,17 @@
         <!--NAME INPUT-->
         <form class="animalcareapp">
             <div class="form-group">
-                <label>First name:<p>
+                <label>Volunteer ID<p>
                         <?php
                         $PersonID = $_GET["id"];
+                        print $PersonID;
+                        ?>
+                    </p></label>
+                <br>
+            </div>
+            <div class="form-group">
+                <label>First name:<p>
+                        <?php
                         ProcessQuery("FirstName","Person",$PersonID);
                         ?>
                     </p></label>
@@ -126,7 +134,9 @@
     <form class="animalcareapp">
         <div class="form-group">
             <label>What days of the week are you available?</label>
-            <p>PHP HERE</p>
+            <p>
+                <!--PHP HERE-->
+            </p>
             <br>
         </div>
         <label>Season availability (check all for year round)</label>
@@ -236,19 +246,25 @@
     <form class="animalcareapp">
         <div class="form-group">
             <label>Are you able to lift 40 pounds on potentially uneven surfaces with minimal assistance?</label>
-            <p>PHP HERE</p>
+            <p>
+                <!--PHP HERE-->
+            </p>
         </div>
         <br>
         <div class="form-group">
             <label>If not, are you willing to become vaccinated at your own cost?</label>
-            <p>PHP HERE</p>
+            <p>
+                <!--PHP HERE-->
+            </p>
         </div>
     </form>
     <br>
     <form class="animalcareapp">
         <div class="form-group">
             <label>Please list all food and animal allergies, if any</label>
-            <p>PHP HERE</p>
+            <p>
+                <!--PHP HERE-->
+            </p>
         </div>
     </form>
     <br>
@@ -256,11 +272,13 @@
     <form class="animalcareapp">
         <div class="form-group">
             <label>Will you be able to commit to either a six-month or one-year schedule, with at least one shift (four hours) per week?</label>
-            <p>PHP HERE</p>
+            <p>
+                <!--PHP HERE-->
+            </p>
         </div>
     </form>
     <br>
-    <form class="animalcareapp" method="post" action="newapplicants.php">
+    <form class="animalcareapp" method="post" action="newapplicants.php?id=<?php print $PersonID ?>">
         <div class="form-group">
             <label>Do you belong to any animal rights groups (PETA, The Humane Society, etc.)? If so, which ones?</label>
             <p>

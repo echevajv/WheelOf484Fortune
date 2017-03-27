@@ -30,7 +30,7 @@
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
-				<p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
+				<p><a href="ActiveVolunteerList.php" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfouradmin">

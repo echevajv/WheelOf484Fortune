@@ -1,5 +1,5 @@
 <?php
-$PersonID = 1;
+$PersonID = $_GET["id"];
 
 if($_POST['approvebutton'])
 {
@@ -48,7 +48,7 @@ session_start();
         </div>
 
         <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
-            <p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
+            <p><a href="ActiveVolunteerList.php" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
         </div>
 
         <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfouradmin">
@@ -175,7 +175,7 @@ function sendDBCommand($sql){
     }
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo "Volunteer Status Updated";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
