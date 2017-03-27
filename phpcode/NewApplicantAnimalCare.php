@@ -38,7 +38,7 @@ if(!empty($_POST['savebutton']))
         <div class="col-xs-12">
             <div class="backbuttonapp" id="back">
                 <div class="col-xs-12 text-left">
-                    <a href="admindashboard.html" id="backbuttonapp"><strong>Back</strong></a>
+                    <a href="admindashboard.php" id="backbuttonapp"><strong>Back</strong></a>
                 </div>
                 <!--END COL XS 12-->
             </div>
