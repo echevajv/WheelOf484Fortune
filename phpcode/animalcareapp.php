@@ -99,7 +99,7 @@
 	        	<!--AVAILABILITY-->          
 		    
 	       		<div class="form-group">
-	                <label>What days of the week are you available, and at what times?</label>
+	                <label>What days of the week are you available?</label>
 	                <br>
 						<label class="checkbox-inline">
 						<input type="checkbox" id="monday" value="option1" name="availablemondaycheck">Mon
