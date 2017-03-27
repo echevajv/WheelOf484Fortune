@@ -195,22 +195,42 @@
         <br>
         <div class="form-group">
             <label>Please briefly describe your relevant hands-on experience with animals, if any. What did you enjoy about the experience? What did you dislike?</label>
-            <p>PHP HERE</p>
+            <p>                        
+			<?php
+                ProcessQuery("Answer1","AnimalCare",$PersonID);
+            ?>
+			</p>
         </div>
         <br>
         <div class="form-group">
             <label>Carnivorous patients are sometimes unable to eat food items whole due to their injuries; you may be required to cut and divide dead rodents, chicks, and fishes into smaller portions. Are you comfortable handling dead animals for this purpose?</label>
-            <p>PHP HERE</p>
+            <p>
+			<?php
+                ProcessQuery("Answer2","AnimalCare",$PersonID);
+            ?>
+			
+			</p>
         </div>
         <br>
         <div class="form-group">
             <label>Prior to release from the Wildlife Center, many predatory birds are presented with live mice in order to evaluate their ability to capture prey in a controlled and measurable environment. What is your opinion on using live-prey for this purpose?</label>
-            <p>PHP HERE</p>
+            <p>
+			<?php
+                ProcessQuery("Answer3","AnimalCare",$PersonID);
+            ?>
+			
+			</p>
         </div>
         <br>
         <div class="form-group">
             <label>Wildlife rehabilitation requires daily outdoor work -- year-round and regardless of weather conditions. Are you able to work outside during all seasons? If not, what are your limitations?</label>
-            <p>PHP HERE</p>
+            <p>
+			
+			<?php
+                ProcessQuery("Answer4","AnimalCare",$PersonID);
+            ?>
+			
+			</p>
         </div>
     </form>
     <form class="animalcareapp">
@@ -243,22 +263,40 @@
     <form class="animalcareapp" method="post" action="newapplicants.php">
         <div class="form-group">
             <label>Do you belong to any animal rights groups (PETA, The Humane Society, etc.)? If so, which ones?</label>
-            <p>PHP HERE</p>
+            <p>
+			<?php
+                ProcessQuery("Answer5","AnimalCare",$PersonID);
+            ?>
+			</p>
         </div>
         <br>
         <div class="form-group">
             <label>What do you hope to learn or accomplish by volunteering at the Wildlife Center of Virginia?</label>
-            <p>PHP HERE</p>
+            <p>
+			
+			<?php
+                ProcessQuery("Answer6","AnimalCare",$PersonID);
+            ?>
+			</p>
         </div>
         <br>
         <div class="form-group">
             <label>Please describe an environmental or wildlife-based issue you feel passionately about, and why:</label>
-            <p>PHP HERE</p>
+            <p>
+			<?php
+                ProcessQuery("Answer7","AnimalCare",$PersonID);
+            ?>
+			</p>
         </div>
         <br>
         <div class="form-group">
             <label>Is there anything else that you’d like us to know about yourself or your experience?</label>
-            <p>PHP HERE</p>
+            <p>
+			<?php
+                ProcessQuery("Answer8","AnimalCare",$PersonID);
+            ?>
+			
+			</p>
         </div>
         <br>
         <a href="#"><h4 id="resumecheck">Resume</h4></a>
@@ -282,6 +320,7 @@
 <!--END COL XS 12-->
 </div>
 <!--END ROW APPLICATION-->
+
 
 </body>
 </html>
