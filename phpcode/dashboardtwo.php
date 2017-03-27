@@ -35,10 +35,10 @@
 				<div id="editinfo">
 					<h4 class="text-center volunteerinfoheader"><strong>Volunteer Information</strong></h4>
 					<br>
-					<a href="#"><h4 id="volunteerinfo" class="infoitem">General<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
-					<a href="#"><h4 id="emergencyinfo" class="infoitem">Emergency<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
-					<a href="#"><h4 id="experienceinfo" class="infoitem">Experience<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
-					<a href="#"><h4 id="experienceinfo" class="infoitem">Documents<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#generalinfo"><h4 id="volunteerinfo" class="infoitem">General<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#emergencyinfo"><h4 id="emergencyinfo" class="infoitem">Emergency<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#experienceinfo"><h4 id="experienceinfo" class="infoitem">Experience<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#additionalinfo"><h4 id="experienceinfo" class="infoitem">Documents<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
 				</div>
 				<!--END EDIT INFO-->
 			</div>
@@ -97,17 +97,11 @@
 			</div>
 
 <!--BOX MAIN-->
-
-<!-- Thats the markup! -->
-<!-- That looks cool. We are done!! -->
-
-
 			<div class="col-xs-12 col-sm-12 col-md-9" id="columnmain">
 				<div class="text-left">
 					<h1 id="signupheader" class="dashboardheader">SIGN UP FOR A SHIFT</h1>
 				</div>
 				<!--END TEXT LEFT-->
-
 				<div class="hidden-xs">
 					<img src="images/treesthree.png" id="treestwo" class="img-responsive">
 				</div>
@@ -177,6 +171,9 @@
 						<!--END FORM GROUP-->
 					</form>
 					<!--END SELECT TYPE-->
+					<div class="text-right" id="shiftsubmitall">
+						<h5 id="shiftsubmit"><a href="#">Submit</a></h5>
+					</div>
 				</div>
 				<!--END FORM ALL-->
 			</div>
