@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    
+<div class="row">
+    <img src="images/trees.png" id="treespositions">
+</div>
 
 <!--APPLICATION-->
 <div class="row" id="application">
