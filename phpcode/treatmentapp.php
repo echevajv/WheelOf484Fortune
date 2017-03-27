@@ -304,7 +304,7 @@
             </div>
             <br>
             <!--SUBMIT BUTTON-->
-            <a href="thankyou.php" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
+            <a href="thankyou.php" name="submittreatment" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
 	</form>
 </div>
 <!--END COL XS 12-->
