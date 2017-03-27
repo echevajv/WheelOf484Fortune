@@ -1,4 +1,20 @@
-    
+<?php
+$PersonID = 1;
+
+if(!empty($_POST['approvebutton']))
+{
+UpdateStatus('confirmed', $PersonID);
+
+    header('Location: newapplicants.php');
+}
+
+if(!empty($_POST['savebutton']))
+{
+    UpdateStatus('rejected', $PersonID);
+
+    header('Location: newapplicants.php');
+}
+?>
     <!DOCTYPE html>
     <html>
     <head>
@@ -46,7 +62,7 @@
                 <div class="form-group">
                     <label>First name:<p>
                             <?php
-                            $PersonID = 1;
+
                             ProcessQuery("FirstName","Person",$PersonID);
                             ?>
                         </p></label>
@@ -273,8 +289,8 @@
 
             <!--SUBMIT BUTTON-->
             <div class="text-center">
-                <a href="#" type="submit" class="btn btn-primary submit" id="approvebutton"><strong>Approve applicant</strong></a>
-                <a href="#" type="submit" class="btn btn-primary submit" id="savebutton"><strong>Save for later</strong></a>
+                <a href="#" type="submit" class="btn btn-primary submit" id="approvebutton" name ="approvebutton"><strong>Approve applicant</strong></a>
+                <a href="#" type="submit" class="btn btn-primary submit" id="savebutton" name ="savebutton"><strong>Save for later</strong></a>
             </div>
             <br>
         </form>
@@ -312,4 +328,21 @@ Function ProcessQuery ($attribute, $table, $id){
         }
     }
 }
+
+Function UpdateStatus ($status, $id){
+    $server = "localhost";
+    $user = "root";
+    $password = "sqlpass";
+    $database = "wildlife";
+    $query = "update Person set status = $status where personID = $id";
+    $con = mysql_connect($server, $user, $password);
+    if (!empty($con)){
+        //echo "Connected Successfully";
+        if (mysql_select_db($database, $con)){
+            //echo "Selected database successfully";
+            $resultset = mysql_query($query, $con);
+                    }
+    }
+}
+
 ?>
