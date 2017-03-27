@@ -36,34 +36,42 @@ session_start();
         <img src="images/trees.png" id="treespositions">
     </div>
 <!--ALL COLUMNS-->
-<div class="container-fluid" id="admindashboard">
-    <div class="row">
+	<div class="container-fluid" id="admindashboard">
+		<div class="row">
 
-        <div class="col-xs-12 col-sm-2 text-center adminnavbuttonname" id="columnoneadmin">
-            <p href="#" id="adminimage" class="navbutton">JANE DOE</p>
-        </div>
+			<div class="col-xs-12 col-sm-2 text-center adminnavbuttonname" id="columnoneadmin">
+				<p href="#" id="adminimage" class="navbutton">JANE DOE</p>
+	        </div>
 
-        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columntwoadmin">
-            <p><a href="admindashboard.php" id="calendarbutton" class="navbutton">CALENDAR</a></p>
-        </div>
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columntwoadmin">
+				<p><a href="admindashboard.php" id="calendarbutton" class="navbutton">CALENDAR</a></p>
+	        </div>
 
-        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
-            <p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
-        </div>
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
+				<p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
+	        </div>
 
-        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfouradmin">
-            <p><a href="#" id="formsbutton" class="navbutton">EDIT FORMS</a></p>
-        </div>
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfouradmin">
+				<p><a href="#" id="formsbutton" class="navbutton">EDIT FORMS</a></p>
+	        </div>
 
-        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfiveadmin">
-            <p><a href="sendmessage.php" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
-        </div>
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfiveadmin">
+				<p><a href="sendmessage.php" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
+	        </div>
 
-        <div class="col-xs-12 col-sm-2 text-center adminnavbutton" id="columnsixadmin">
-            <p><a href="newapplicants.php" id="newapplicantbutton" class="navbuttoncurrent">NEW APPLICANTS</a></p>
-        </div>
+	       	<div class="col-xs-12 col-sm-2 text-center adminnavbutton" id="columnsixadmin">
+				<p><a href="newapplicants.php" id="newapplicantbutton" class="navbuttoncurrent">NEW APPLICANTS</a></p>
+	        </div>
+	    </div>
     </div>
-</div>
+
+    <div class="container-fluid" class="adminmainheader">
+		<div class="row">	
+			<div class="col-xs-12 text-left">
+				<h1 class="adminnavheading">NEW APPLICANTS</h1>
+			</div>
+		</div>
+	</div>
 
 <!--THANK YOU BOX-->
 <div id="allcontentapplicant">
