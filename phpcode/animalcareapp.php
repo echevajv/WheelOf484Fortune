@@ -47,51 +47,51 @@
 					<div class="form-group">
 					<label>First name</label>
 					<br>
-					<input type="text" class="form-control" id="inputfirstname" name="firstname">
+					<input type="text" class="form-control" id="inputfirstname" name="firstname" required>
 					</div>
 					<div class="form-group">
 					<label>Last name</label>
 					<br>
-					<input type="text" class="form-control" id="inputlastname" name="lastname">
+					<input type="text" class="form-control" id="inputlastname" name="lastname" required>
 					</div>
 				<br>
 				
 	<!--EMAIL INPUT-->	            
 	            <div class="form-group">
 	                <label>Email</label>
-	                <input class="form-control" id="inputemail" required name="email">
+	                <input class="form-control" id="inputemail" name="email" required>
 	            </div>
 	<!--ADDRESS INPUT-->	            
 	            <div class="form-group">
 	                <label>Address</label>
-	                <input class="form-control" id="inputaddress" required name="address">
+	                <input class="form-control" id="inputaddress" required name="address " required>
 	            </div>
 	<!--CITY INPUT-->	            
 	            <div class="form-group">
 	                <label>City</label>
-	                <input class="form-control" id="inputcity" name="city">
+	                <input class="form-control" id="inputcity" name="city" required>
 	            </div>
 	<!--STATE INPUT-->
 	            <div class="form-group">
 	                <label>State</label>
-	                <input class="form-control" id="inputstate" name="state">
+	                <input class="form-control" id="inputstate" name="state" required>
 	            </div>
 	<!--ZIP CODE INPUT-->
 	            <div class="form-group">
 	                <label>Zip Code</label>
-	                <input class="form-control" id="inputzipcode" name="zipcode">
+	                <input class="form-control" id="inputzipcode" name="zipcode" required>
 	            </div>
 	<!--PHONE INPUT-->
 	            <div class="form-group">
 	                <label>Phone</label>
-	                <input class="form-control" id="inputphone" name="phone">
+	                <input class="form-control" id="inputphone" name="phone" required>
 	            </div>
 	<!--DOB INPUT-->
 			
 				<div class="form-group">
 					<label>Date of Birth</label>
 					<br>
-					<input type="date" class="form-control" id="dateofbirth" name="dateofbirth">
+					<input type="date" class="form-control" id="dateofbirth" name="dateofbirth" required>
 				
 	        	    <br>
 	        	</div>
@@ -146,15 +146,15 @@
 	                <label>Name</label>
 	                <input class="form-control" id="inputemergencyname" name="emergencyname" placeholder="First and last" required>
 	            </div>
-	<!--EMERGENCY EMAIL INPUT-->
+	<!--EMERGENCY PHONE INPUT-->
 	            <div class="form-group">
 	                <label>Phone</label>
-	                <input class="form-control" id="inputemergencyemail" name="emergencyemail" required>
+	                <input class="form-control" id="inputemergencyemail" name="emergencyphone" required>
 	            </div>
-	<!--EMERGENCY ADDRESS INPUT-->
+	<!--RELATIONSHIP INPUT-->
 	            <div class="form-group">
 	                <label>Relationship</label>
-	                <input class="form-control" id="inputemergencyaddress" name="emergencyaddress">
+	                <input class="form-control" id="inputemergencyaddress" name="emergencyrelationship">
 	            </div>
 	            <br>
 <!--EXPERIENCE AND REQUIREMENTS-->
@@ -162,12 +162,12 @@
 		        <br>
 	            <div class="form-group">
 	                <label>Please briefly describe your relevant hands-on experience with animals, if any. What did you enjoy about the experience? What did you dislike?</label>
-	                <textarea class="form-control" name="likedislike" rows="5"></textarea>
+	                <textarea class="form-control" name="likedislike" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Carnivorous patients are sometimes unable to eat food items whole due to their injuries; you may be required to cut and divide dead rodents, chicks, and fishes into smaller portions. Are you comfortable handling dead animals for this purpose?</label>
-	                <textarea class="form-control" name="deadanimals" rows="5"></textarea>
+	                <textarea class="form-control" name="deadanimals" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
@@ -177,7 +177,7 @@
 	            <br>
 	            <div class="form-group">
 	                <label>Wildlife rehabilitation requires daily outdoor work -- year-round and regardless of weather conditions. Are you able to work outside during all seasons? If not, what are your limitations?</label>
-	                <textarea class="form-control" name="workoutside" rows="5"></textarea>
+	                <textarea class="form-control" name="workoutside" rows="5" required></textarea>
 	            </div>
         	
 	            <div class="form-group">
@@ -211,7 +211,7 @@
 	        
 	            <div class="form-group">
 	                <label>Please list all food and animal allergies, if any</label>
-	                <textarea class="form-control" name="allergiesquestion" rows="5"></textarea>
+	                <textarea class="form-control" name="allergiesquestion" rows="5" required></textarea>
 	            </div>
 	        
 	        <br>
@@ -230,22 +230,22 @@
 	        
 	            <div class="form-group">
 	                <label>Do you belong to any animal rights groups (PETA, The Humane Society, etc.)? If so, which ones?</label>
-	                <textarea class="form-control" name="animalrightsgroups" rows="5"></textarea>
+	                <textarea class="form-control" name="animalrightsgroups" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>What do you hope to learn or accomplish by volunteering at the Wildlife Center of Virginia?</label>
-	                <textarea class="form-control" name="learnaccomplish" rows="5"></textarea>
+	                <textarea class="form-control" name="learnaccomplish" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Please describe an environmental or wildlife-based issue you feel passionately about, and why:</label>
-	                <textarea class="form-control" name="issuesquestion" rows="5"></textarea>
+	                <textarea class="form-control" name="issuesquestion" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Is there anything else that you’d like us to know about yourself or your experience?</label>
-	                <textarea class="form-control" name="otherthings" rows="5"></textarea>
+	                <textarea class="form-control" name="otherthings" rows="5" required></textarea>
 	            </div>
 	            <br>
 
