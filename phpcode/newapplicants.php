@@ -1,4 +1,18 @@
 <?php
+$PersonID = 1;
+
+if($_POST['approvebutton'])
+{
+    SendDBCommand("update Person set status = 'confirmed' where personID = $PersonID;");
+}
+
+if($_POST['savebutton'])
+{
+    SendDBCommand("update Person set status = 'rejected' where personID = $PersonID;");
+}
+?>
+
+<?php
 session_start();
 
 
@@ -116,7 +130,7 @@ Function PopulateTable ($status){
     $user = "root";
     $password = "sqlpass";
     $database = "wildlife";
-    $query = "Select concat_ws(' ', firstname, lastname), dateapplied from person where status like '$status';";
+    $query = "Select concat_ws(', ', lastname, firstname) as name, dateapplied from person where status like '$status' order by lastname;";
     $con = mysql_connect($server, $user, $password);
     if (!empty($con)){
         //echo "Connected Successfully";
@@ -127,7 +141,7 @@ Function PopulateTable ($status){
                 //echo "resultset successfull";
                 while ($row = mysql_fetch_array($resultset)) {
                     //print("<table border=0 class=stylec1>");
-                    $name = $row["concat_ws(' ', firstname, lastname)"];
+                    $name = $row["name"];
                     $dateapplied = $row["dateapplied"];
 
                     print("<tr>");
@@ -139,5 +153,29 @@ Function PopulateTable ($status){
             }
         }
     }
+}
+?>
+<?php
+function sendDBCommand($sql){
+    //insert into database
+    $servername = "localhost";
+    $username = "root";
+    $password = "sqlpass";
+    $dbname = "wildlife";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 }
 ?>
