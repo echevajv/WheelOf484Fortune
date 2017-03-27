@@ -1,17 +1,4 @@
-<?php
-$PersonID = 1;
 
-if(!empty($_POST['approvebutton']))
-{
-
-    SendDBCommand("update Person set status = 'confirm' where personID = $PersonID;");
-}
-
-if(!empty($_POST['savebutton']))
-{
-    SendDBCommand('rejected', $PersonID);
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
