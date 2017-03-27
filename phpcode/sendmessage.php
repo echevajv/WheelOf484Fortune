@@ -25,7 +25,7 @@
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columntwoadmin">
-				<p><a href="admindashboard.html" id="calendarbutton" class="navbutton">CALENDAR</a></p>
+				<p><a href="admindashboard.php" id="calendarbutton" class="navbutton">CALENDAR</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
@@ -37,11 +37,11 @@
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfiveadmin">
-				<p><a href="sendmessage.html" id="messagebutton" class="navbuttoncurrent">SEND MESSAGE</a></p>
+				<p><a href="sendmessage.php" id="messagebutton" class="navbuttoncurrent">SEND MESSAGE</a></p>
 	        </div>
 
 	       	<div class="col-xs-12 col-sm-2 text-center adminnavbutton" id="columnsixadmin">
-				<p><a href="newapplicants.html" id="newapplicantbutton" class="navbutton">NEW APPLICANTS</a></p>
+				<p><a href="newapplicants.php" id="newapplicantbutton" class="navbutton">NEW APPLICANTS</a></p>
 	        </div>
 	    </div>
     </div>
