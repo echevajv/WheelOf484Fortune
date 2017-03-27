@@ -3,219 +3,244 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Admin Dashboard</title>
+	<title>Admin | Calendar</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/datepicker3.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/stylesheet.css" rel="stylesheet">
 </head>
 
-<body id="adminbody">
+<body id="admindashboardbody">
 
-<!--DASHBOARD-->
-	<div class="container-fluid" id="admindashboardnav">
-		<div class="row">
-			<div class="col-xs-12 col-sm-2 text-center adminnavbutton" id="columnoneadmin">
-				<p href="#" id="adminimage" class="navbutton">JANE DOE</p>
+<!--BACKGROUND IMAGES-->
+	<div class="row">
+		<img src="images/trees.png" id="treespositions">
+	</div>
+	<!--END ROW-->
+
+<!--ALL COLUMNS-->
+	<div class="container-fluid" id="admindashboard">
+		<div class="row">	
+			<div class="col-xs-12 col-sm-2 text-center adminnavbuttonname" id="columnoneadmin">
+				<p id="adminimage" class="navbutton">JANE DOE</p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columntwoadmin">
-				<p><a href="#" id="calendarbutton" class="navbutton">CALENDAR</a></p>
+				<p><a href="admindashboard.html" id="calendarbutton" class="navbuttoncurrent">CALENDAR</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
-				<p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEERS</a></p>
+				<p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfouradmin">
-				<p><a href="#" id="formsbutton" class="navbutton">FORMS</a></p>
+				<p><a href="#" id="formsbutton" class="navbutton">EDIT FORMS</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfiveadmin">
-				<p><a href="#" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
+				<p><a href="sendmessage.html" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
 	        </div>
 
 	       	<div class="col-xs-12 col-sm-2 text-center adminnavbutton" id="columnsixadmin">
-				<p><a href="#" id="infobutton" class="navbutton">ADMIN INFO</a></p>
+				<p><a href="newapplicants.html" id="newapplicantbutton" class="navbutton">NEW APPLICANTS</a></p>
 	        </div>
 	    </div>
     </div>
 
-    <div class="container-fluid" id="admindashboard">
-		<div class="row" id="calendarpage">
-			<div class="col-xs-12 col-sm-12" id="">
-				<h1 id="adminimage" class="adminheader">CALENDAR</h1>
-	        </div>
+   <div class="container-fluid" class="adminmainheader">
+		<div class="row">	
+			<div class="col-xs-12 text-left">
+				<h1 class="adminnavheading">CALENDAR</h1>
+			</div>
+		</div>
+	</div>
 
-			<div class="col-xs-12 col-sm-2" id="">
-				<p id="adminimage">VOLUNTEER TYPE</p>
-	        </div>
+<!--COLUMN 2-->
+			<div class="col-xs-12" id="calendarcolumntwo">
+				<div id="volunteermessagechoice" class="text-center">
+					<h4 class="admindashboardheader text-center">Volunteer Type</h4>
+					<label class="checkbox-inline" id="choosetype">
+					  <input type="checkbox" id="inlineCheckbox1">Animal Care
+					</label>
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="inlineCheckbox2">Treatment Team
+					</label>
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="inlineCheckbox3">Outreach
+					</label>
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="inlineCheckbox3">Transport + Rescue
+					</label>
+			        <form class="navbar-form" role="search" id="searchbarall">
+				        <div class="input-group">
+				            <input type="text" class="form-control" placeholder="Search a volunteer" id="srch-term">
+				            <div class="input-group-btn">
+				                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search" id="searchicon"></i></button>
+				            </div>
+				        </div>
+			        </form>
+			    </div>
+			</div>
+			<!--END COLUMN TWO-->
+		
+<!--COLUMN 3-->	
+			<div class="col-xs-12" id="calendarcolumnthree">
 
-	        <div class="col-xs-12 col-sm-8" id="">
-				<p id="calendarbutton">CALENDAR</p>
-
-			<div id="calendarscroll">
-				<table class="table" id="admincalendar">
-				<tr>
-					<th id="monthyear" colspan="4" class="text-center"><h1>MAY 2017</h1></th>
-				</tr>
-				<tr>
-					<th id="dayofweek" colspan="4" class="text-center">FRI, MAY 26</th>
-				</tr>
+				<div id="calendarscroll">
+					<table class="table" id="admincalendar">
 					<tr>
-						<th id="calendarheader" colspan="1">LAST NAME</th>
-						<th id="calendarheader" colspan="1">FIRST NAME</th>
-						<th id="calendarheader" colspan="1">POSITION</th>
-						<th id="calendarheader" colspan="1">TIME</th>
+						<th colspan="4" class="text-center"><h1 class="monthyear"><strong>MAY 2017</strong></h1></th>
 					</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="dayofweek" colspan="4" class="text-center">FRI, MAY 26</th>
 					</tr>
-				<tr>
-					<th id="dayofweek" colspan="4" class="text-center">SAT, MAY 27</th>
-				</tr>
+						<tr>
+							<th id="calendarheader" colspan="1">LAST NAME</th>
+							<th id="calendarheader" colspan="1">FIRST NAME</th>
+							<th id="calendarheader" colspan="1">POSITION</th>
+							<th id="calendarheader" colspan="1">TIME</th>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="dayofweek" colspan="4" class="text-center">SAT, MAY 27</th>
 					</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="dayofweek" colspan="4" class="text-center">MON, MAY 29</th>
 					</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="dayofweek" colspan="4" class="text-center">TUES, MAY 30</th>
 					</tr>
-				<tr>
-					<th id="dayofweek" colspan="4" class="text-center">MON, MAY 29</th>
-				</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="dayofweek" colspan="4" class="text-center">WED, MAY 31</th>
 					</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-				<tr>
-					<th id="dayofweek" colspan="4" class="text-center">TUES, MAY 30</th>
-				</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-				<tr>
-					<th id="dayofweek" colspan="4" class="text-center">WED, MAY 31</th>
-				</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-				<tr>
-					<th id="monthyear" colspan="4" class="text-center"><h1>JUNE 2017</h1></th>
-				</tr>
-				<tr>
-					<th id="dayofweek" colspan="4" class="text-center">THURS, JUNE 1</th>
-				</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="monthyear" colspan="4" class="text-center"><h1 class="monthyear"><strong>JUNE 2017</strong></h1></th>
 					</tr>
 					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
+						<th id="dayofweek" colspan="4" class="text-center">THURS, JUNE 1</th>
 					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime">8:00am - 4:00pm</td>
-					</tr>
-				</table>
-	        </div>
-	        </div>
-
-	        <div class="col-xs-2" id="">
-				<p id="volunteerbutton">MONTH</p>
-	        </div>
-	    </div>
-    </div>
-
-
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+						<tr>
+							<td id="calendarlastname">Doe</td>
+							<td id="calendarfirstname">Jane</td>
+							<td id="calendarposition">Animal Care</td>
+							<td id="calendartime">8:00am - 4:00pm</td>
+						</tr>
+					</table>
+		        </div>
+	    	</div>		
+	<!--END DASHBOARD-->
 </body>
 </html>
