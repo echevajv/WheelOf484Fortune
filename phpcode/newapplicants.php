@@ -67,7 +67,7 @@ session_start();
                             </tr>
                             <?php PopulateTable('applicant') ?>
                         </table>
-                        <p>PHP HERE for no applicant</p>
+
                     </div>
                     <!--END PANEL BODY-->
                 </div>
@@ -93,7 +93,7 @@ session_start();
                                     <th class="text-center"><strong>Date Applied</strong></th>
                                     <th class="text-center"><strong></strong></th>
                                 </tr>
-                                <?php PopulateTables('rejected'); ?>
+                                <?php PopulateTable('rejected'); ?>
                             </table>
                         </div>
                         <!--END PANEL BODY-->
@@ -114,7 +114,7 @@ session_start();
 Function PopulateTable ($status){
     $server = "localhost";
     $user = "root";
-    $password = "Dr590215";
+    $password = "sqlpass";
     $database = "wildlife";
     $query = "Select concat_ws(' ', firstname, lastname), dateapplied from person where status like '$status';";
     $con = mysql_connect($server, $user, $password);
@@ -125,21 +125,17 @@ Function PopulateTable ($status){
             $resultset = mysql_query($query, $con);
             if ($resultset==true){
                 //echo "resultset successfull";
-
-                while ($row = mysql_fetch_array($resultset)){
+                while ($row = mysql_fetch_array($resultset)) {
                     //print("<table border=0 class=stylec1>");
-                    $name = row["concat_ws(' ', firstname, lastname)"];
-                    $dateapplied = row["dateapplied"];
+                    $name = $row["concat_ws(' ', firstname, lastname)"];
+                    $dateapplied = $row["dateapplied"];
 
                     print("<tr>");
                     print("<td>$name</td>");
                     print("<td>$dateapplied</td>");
-                    print("<td><a href='ewapplicantanimalcare.php' id='viewapplicantbutton'>View</td>");
+                    print("<td><a href='NewApplicantAnimalCare.php' id='viewapplicantbutton'>View</td>");
                     print("</tr>");
-
-
                 }
-
             }
         }
     }
