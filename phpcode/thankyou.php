@@ -379,7 +379,7 @@ if (isset($_POST['Submission'])) {
                 <div class="panel-body">POST STUFF
                     <table>
                         <?php
-                        // show all post variables
+                        /*show all post variables
 						
                         foreach ($_POST as $key => $value) {
                             echo "<tr>";
@@ -391,7 +391,7 @@ if (isset($_POST['Submission'])) {
                             echo "</td>";
                             echo "</tr>";
                         }
-			
+			*/
     
 
                         ?>
