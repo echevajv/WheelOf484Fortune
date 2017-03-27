@@ -241,7 +241,7 @@
 	            <br>
 
 <!--SUBMIT BUTTON-->
-	            <a href="thankyou.html" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
+	            <a href="thankyou.html" name="submitoutreach" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
 	        </form>
         </div>
         <!--END COL XS 12-->
