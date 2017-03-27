@@ -110,37 +110,31 @@
 						<label class="checkbox-inline">
 						<input type="checkbox" id="tuesday" value="option2" name="availabletuesdaycheck">Tues
 						</label>
-						<input class="form-control" id="tuesdayavailability" name="availabletuesday">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="wednesday" value="option3" name="availablewednesdaycheck">Wed
 						</label>
-						<input class="form-control" id="wednesdayavailability" name="availablewednesday">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="thusday" value="option4" name="availablethursdaycheck">Thurs
 						</label>
-						<input class="form-control" id="thursdayavailability" name="availablethursday">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="friday" value="option5" name="availablefridaycheck">Fri
 						</label>
-						<input class="form-control" id="fridayavailability" name="availablefriday">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="saturday" value="option6" name="availablesaturdaycheck">Sat
 						</label>
-						<input class="form-control" id="saturdayavailability" name="availablesaturday">
 						<br>
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="sunday" value="option7" name="availablesundaycheck">Sun
 						</label>
-						<input class="form-control" id="sundayavailability" name="availablesunday">	
 	            </div>
 	        
 
