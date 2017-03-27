@@ -259,11 +259,12 @@ function sanitize_input($data) {
     return $data;
 }
 
+// if the animalcareapp is submitted
 if (isset($_POST['Submission'])) {
     $FirstName = sanitize_input($_POST["firstname"]);
     $LastName = sanitize_input($_POST["lastname"]);
-    $MI = "A";                                                                      
-	   //$MI = sanitize_input($_POST["mi"]);
+    $MI = "A";                                                                      // ADDED
+    //$MI = sanitize_input($_POST["mi"]);
     $Email = sanitize_input($_POST["email"]);
     $Address = sanitize_input($_POST["address"]);
     $City = sanitize_input($_POST["city"]);
@@ -273,31 +274,55 @@ if (isset($_POST['Submission'])) {
     $DOB = sanitize_input($_POST["dateofbirth"]);
     $PersonTypeID = 1;
     $AllergiesOrLimitations = sanitize_input($_POST["allergiesquestion"]);
-	
-	$RabiesVaccinated = sanitize_input($_POST["rabiesquestion"]);
-	if ($RabiesVaccinated == "Yes")
-	{
-		$RabiesVaccinated = "Y";
-	}
-	else
-	{
-		$RabiesVaccinated = "N";
-	}		
-	$Permit = "";	
-    $PermitCategory = "";                             
+
+    $RabiesVaccinated = sanitize_input($_POST["rabiesquestion"]);
+    if ($RabiesVaccinated == "Yes")
+    {
+        $RabiesVaccinated = "Y";
+    }
+    else
+    {
+        $RabiesVaccinated = "N";
+    }
+
+    $Permit = "";
+    $PermitCategory = "";
     $Status = "Applicant"; #starts off as applicant, but needs a trigger to change
     $YearlyHours = 0; //needs to be calculated
     $YearlyMiles = 0; //needs to be calculated
-    $DateApplied = "2017-03-16";
+    $DateApplied = '2017-02-04';
     $Password = 1111;
     $LastUpdatedBy = 'Amaana';
     $LastUpdated = '2017-03-16';
+
+    $ReptileRoom = "";
+    $RepRoomSoakDay = "";
+    $SnakeFeedingDay = "";
+    $ICU = "";
+    $ExpandedICU = "";
+    $Aviary = "";
+    $Mammals = "";
+    $PU_E = "";
+    $PU_EWeighDay = "";
+    $Fawns = "";
+    $Formula = "";
+    $Meals = "";
+    $RaptorFeed = "";
+    $ISO = "";
+    $Answer1= $_POST["answer1"];
+    $Answer2= $_POST["answer2"];
+    $Answer3= $_POST["answer3"];
+    $Answer4= $_POST["answer4"];
+    $Answer5= $_POST["answer5"];
+    $Answer6= $_POST["answer6"];
+    $Answer7= $_POST["answer7"];
+    $Answer8= $_POST["answer8"];
 
 
     // TEST CONNECTION TO SERVER
     $servername = 'localhost';
     $username = 'root';
-    $password = 'password';
+    $password = 'sqlpass';
     $dbname = 'wildlife';
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -305,12 +330,12 @@ if (isset($_POST['Submission'])) {
         echo('Could not connect: ' . mysqli_error());
     }
 
-	
     $AnimalCareVolunteer = new AnimalCareVolunteer($FirstName,
-      $LastName, $MI, $Email, $Address, $City, $State, $Zip, $Phone, $DOB,
-     $AllergiesOrLimitations, $RabiesVaccinated, $Permit, $PermitCategory, $Status, $YearlyHours, $YearlyMiles);
-	 
-	  $stmt = $conn->prepare("INSERT INTO Person(FIRSTNAME, LASTNAME, MI, EMAIL, PHONE, ADDRESS, CITY,"
+        $LastName, $MI, $Email, $Address, $City, $State, $Zip, $Phone, $DOB,
+        $AllergiesOrLimitations, $RabiesVaccinated, $Permit, $PermitCategory, $Status, $YearlyHours, $YearlyMiles);
+
+    // Insert into Person table (22 columns)
+    $stmt = $conn->prepare("INSERT INTO Person(FIRSTNAME, LASTNAME, MI, EMAIL, PHONE, ADDRESS, CITY,"
         . " STATE, ZIPCODE, DATEOFBIRTH, ALLERGIESORLIMITATIONS, RABIESVACCINATED, VALIDPERMIT, PERMITCATEGORY,"
         . " STATUS, YEARLYHOURS, YEARLYMILESDRIVEN, DATEAPPLIED, PASSWORD, PERSONTYPEID, LASTUPDATEDBY, LASTUPDATED) "
         . " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
@@ -334,19 +359,46 @@ if (isset($_POST['Submission'])) {
         $AnimalCareVolunteer->getStatus(),
         $AnimalCareVolunteer->getYearlyHours(),
         $AnimalCareVolunteer->getYearlyMiles(),
-		$DateApplied,
-		$Password,
+        $DateApplied,
+        $Password,
         $AnimalCareVolunteer->getPersonType(),
         $LastUpdatedBy,
-		$LastUpdated);
+        $LastUpdated);
         $stmt->execute();
-		echo $stmt->error;
-		
-	
+        echo $stmt->error;
+
+        // get the PersonID
+
+        $sql = "SELECT PersonID from Person where FirstName ='". $FirstName. "' and Lastname ='". $LastName. "'";
+        $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            //print("<table border=0 class=stylec1>");
+            $PersonID = $row["PersonID"];
+        }
+    }
+
+    // Insert into AnimalCare table (24 columns)
+
+    $stmt = $conn->prepare("INSERT INTO AnimalCare(PERSONID, REPTILEROOM, REPROOMSOAKDAY, SNAKEFEEDINGDAY, ICU, EXPANDEDICU, AVIARY, MAMMALS,"
+        . " PU_E, PU_EWEIGHDAY, FAWNS, FORMULA, MEALS, RAPTORFEED, ISO,"
+        . " ANSWER1, ANSWER2, ANSWER3, ANSWER4, ANSWER5, ANSWER6, ANSWER7, ANSWER8, LASTUPDATEDBY, LASTUPDATED) "
+        . " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+
+    $stmt->bind_param("iiiiiiiiiiiiiiissssssssss",
+        $PersonID, $ReptileRoom, $RepRoomSoakDay, $SnakeFeedingDay, $ICU, $ExpandedICU, $Aviary, $Mammals, $PU_E, $PU_EWeighDay,
+        $Fawns, $Formula, $Meals, $RaptorFeed, $ISO, $Answer1, $Answer2, $Answer3, $Answer4, $Answer5, $Answer6, $Answer7, $Answer8,
+        $LastUpdatedBy, $LastUpdated);
+
+    $stmt->execute();
+    echo $stmt->error;
+
+    $conn->close();
+
+}
+
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -379,8 +431,8 @@ if (isset($_POST['Submission'])) {
                 <div class="panel-body">POST STUFF
                     <table>
                         <?php
-                        /*show all post variables
-						
+                        // show all post variables
+
                         foreach ($_POST as $key => $value) {
                             echo "<tr>";
                             echo "<td>";
@@ -391,8 +443,8 @@ if (isset($_POST['Submission'])) {
                             echo "</td>";
                             echo "</tr>";
                         }
-			*/
-    
+
+
 
                         ?>
                     </table>
@@ -405,9 +457,9 @@ if (isset($_POST['Submission'])) {
                         Thanks for your interest in volunteering with the Wildlife Center of Virginia!</p>
                 </div>
                 <!--END PANEL BODY-->
-             	<div class="text-right">
-			<a href="pendingdashboard.html" class="btn btn-primary" id="backtologinbutton">View your dashboard</a>
-		</div>
+                <div class="text-right">
+                    <a href="index.php" class="btn btn-primary" id="backtologinbutton">Back To Login Page</a>
+                </div>
                 <!--END TEXT RIGHT-->
             </div>
             <!--END LOGIN PANEL-->
