@@ -1,0 +1,1102 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow');
+
+body
+{
+padding: 0;
+background-color: lightblue;
+margin: 20px 20px 40px 20px;
+}
+
+#dashboardbody
+{
+max-width: 2000px;
+margin: auto;
+overflow-x:hidden;
+}
+
+#dashboardbody
+{
+background-color: white;
+}
+
+#positionsbody
+{
+margin: 0px 20px 40px 20px;
+}
+
+#adminbody
+{
+margin: 0px;
+}
+
+/*****************************
+******************************
+HEADER
+******************************
+*****************************/
+	.header
+	{
+	padding: 10px 0px 15px 0px;
+	margin: 0px;
+	}
+
+/*****************************
+******************************
+LOGIN PANEL
+******************************
+*****************************/
+
+	.login-panel
+	{
+	margin: auto;
+	max-width: 500px;
+	}
+
+	.panel-heading
+	{
+	height: 60px;
+	}
+
+	#volunteersignup
+	{
+	margin: auto;
+	max-width: 500px;
+	font-size: 15px;
+	}
+
+	#panelheading,
+	#panelbody
+	{
+	background-color: white;
+	color: black;
+	}
+
+	#allcontent
+	{
+	margin-top: 100px;
+	}
+
+	#loginbutton
+	{
+	padding: 9px 17px 9px 17px;
+	}
+
+	#volunteersignup
+	{
+	padding: 9px 8px 9px 8px;
+	}
+
+	#loginbutton,
+	#volunteersignup
+	{
+	background-color: #4D4D4D;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	}
+
+	#trees 
+	{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	}
+
+	#sun 
+	{
+    position: fixed;
+    bottom: 10;
+    left: 40px;
+    width: 300px;
+	}
+
+/*****************************
+******************************
+POSITIONS
+******************************
+*****************************/
+	.allcontent
+	{
+	background-color: white;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 9px 25px 22px 25px;
+	position: relative;
+	border-radius: 5px;
+	z-index: 2;
+	}
+
+	#backbutton
+	{
+	background-color: #F7931E;
+	border: none;
+	padding: 2px 25px 2px 25px;
+	position: absolute;
+	border-radius: 5px 0px 0px 0px;
+	color: white;
+	}
+
+	#back
+	{
+	position: absolute;
+	margin-top: 55px;
+	z-index: 5;
+	}
+
+	#backbutton:hover
+	{
+	background-color: gray;
+	}
+
+	#images
+	{
+	max-width: 1000px;
+	}
+
+	.imagescolumn
+	{
+	padding: 0;
+	}
+
+	.positiontext
+	{
+	padding: 0px 0px 15px 0px;
+	text-align: justify;
+	max-width: 1000px;
+	margin: auto;
+	}
+
+	#positionsinfotext
+	{
+	font-size: 14px;
+	text-align: justify;
+	}
+
+	#animalcareheader
+	{
+	padding-top: 13px;
+	}
+
+	.subheader
+	{
+	margin: 0;
+	padding: 5px 0px 9px 0px;
+	}
+
+	.mainheader
+	{
+	margin: 0px;
+	padding: 5px 0px 20px 0px;
+	}
+
+	#applybutton
+	{
+	background-color: #56BF90;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	width: 321px;
+	margin: auto;
+	margin-bottom: 5px;
+	padding: 9px 17px 9px 17px;
+	}
+
+	#treespositions
+	{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	}
+
+	.bear
+	{
+	max-width: 1000px;
+	margin: auto;
+	height: 35px;
+	margin-top: 10px;
+	}
+
+	#bearpaw
+	{
+	width: 30px;
+	z-index: 5;
+	margin-top: 50px;
+	position: relative;
+	}
+
+	#bearhead
+	{
+	width: 80px;
+	z-index: 5;
+	margin-top: 0px;
+	position: relative;
+	margin-right: 80px;
+	z-index: 0;
+	}
+
+/*****************************
+******************************
+APPLICATIONS
+******************************
+*****************************/
+	.animalcareapp
+	{
+	padding: 0px 10px 0px 10px;
+	margin: auto;
+	max-width: 1000px;
+	}
+
+	.outreachapp
+	{
+	padding: 0px 10px 0px 10px;
+	margin: auto;
+	max-width: 1000px;
+	}
+
+	.outreachapp
+	{
+	padding: 0px 10px 0px 10px;
+	margin: auto;
+	max-width: 1000px;
+	}
+
+	.transportapp
+	{
+	padding: 0px 10px 0px 10px;
+	margin: auto;
+	max-width: 1000px;
+	}
+
+	#backbuttonapp
+	{
+	background-color: #F7931E;
+	border: none;
+	padding: 2px 25px 2px 25px;
+	position: absolute;
+	border-radius: 5px 0px 0px 0px;
+	color: white;
+	margin-top: -55px;
+	margin-left: -30px;
+	}
+
+	.backbuttonapp
+	{
+	max-width: 1000px;
+	margin: auto;
+	height: 35px;
+	}
+
+	#backbuttonapp:hover
+	{
+	background-color: gray;
+	}
+
+	#careappinfo
+	{
+	max-width: 1000px;
+	padding: 0px 10px 10px 10px;
+	}
+
+	#careappinfotext
+	{
+	font-size: 17px;
+	text-align: justify;
+	}
+
+	#applicationmainheader
+	{
+	margin-top: 30px;
+	margin-bottom: 0px;
+	}
+
+	.applicationheader
+	{
+	background-color: #F7931E;
+	color: white;
+	padding: 10px;
+	border-radius: 8px;
+	text-align: center;
+	}
+
+	#application
+	{
+	background-color: white;
+	max-width: 1000px;
+	margin: auto;
+	padding: 0px 0px 10px 0px;
+	border-radius: 6px;
+	}
+
+	textarea
+	{ 
+	resize: vertical;
+	}
+
+	label
+	{
+	font-size: 17px;
+	}
+
+	.nav
+	{
+	max-width: 1000px;
+	margin: auto;
+	background-color: transparent;
+	}
+
+	li a
+	{
+	color: black;
+	}
+
+	.active
+	{
+	color: black;
+	}
+
+	#submitbutton
+	{
+	float: right;
+	background-color: #56BF90;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	width: 180px;
+	margin: auto;
+	margin-bottom: 5px;
+	padding: 11px 17px 11px 17px;
+	}
+
+/*****************************
+******************************
+THANK YOU
+******************************
+*****************************/
+	#thankyoutext
+	{
+	font-size: 15px;
+	text-align: justify;
+	}
+
+	#allcontentthankyou
+	{
+	margin-top: 100px;
+	}
+
+	#backtologinbutton
+	{
+	padding: 9px 17px 9px 17px;
+	margin: 15px 15px 16px 15px;
+	}
+
+	#backtologinbutton
+	{
+	background-color: #4D4D4D;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	}
+
+/*****************************
+******************************
+DASHBOARD
+******************************
+*****************************/
+	#dashboard
+	{
+	background-color: #4D4D4D;
+	}
+
+	.dashboardheader
+	{
+	font-family: "Archivo Black", "helvetica", "sans-serif";
+	}
+
+	#columncheckin
+	{
+	background-color: lightblue;
+	padding: 20px 20px 0px 20px;
+	}
+
+	#checkinbutton
+	{
+	margin: auto;
+	}
+
+	#checkoutbutton
+	{
+	margin: auto;
+	}
+
+/* COLUMN ONE */
+	#columnone
+	{
+	background-color: #4D4D4D;
+	padding: 0px 0px 27px 0px;
+	margin: 0;
+	position: relative;
+	z-index: 10;
+	}
+
+	#updateimage
+	{
+	margin: auto;
+	margin-top: -230px;
+	margin-bottom: 30px;
+	max-width: 214px;
+	padding: 128px 0px 60px 0px;
+	position: relative;
+	border-radius: 100px;
+	color: transparent;
+	}
+
+	#updateimage:hover
+	{
+	color: black;
+	}
+
+	#updateimage a
+	{
+	text-decoration: none;
+	}
+
+	#logoutbutton
+	{
+	border: none;
+	margin: 8px 10px 10px 12px;
+	position: absolute;
+	color: white;
+	z-index: 11;
+	}
+
+	#logoutbutton:hover
+	{
+	color: #F7931E;
+	}
+
+	#logout
+	{
+	position: absolute;
+	z-index: 5;
+		z-index: 11;
+	}
+
+	.volunteerinfo
+	{
+	color: white;
+	}
+
+	#volunteerimage
+	{
+	border-radius: 100%;
+	margin: auto;
+	max-width: 250px;
+	padding: 16px 18px 18px 18px;
+	}
+
+	.glyphicon
+	{
+	float: right;
+	}
+
+	.volunteerinfoheader
+	{
+	padding: 0px;
+	margin: 0px;
+	height: 0px;
+	color: white;	
+	}
+
+	.volunteerinfo
+	{
+	padding: 0px;
+	margin: 0px;
+	}
+
+	#editinfo
+	{
+	margin-top: 8px;
+	}
+
+	a:hover
+	{
+	text-decoration: none;
+	}
+
+	.infoitem
+	{
+	background-color: white;
+	padding: 14px 10px 14px 10px;
+	margin: 25px;
+	text-align: left;
+	border-radius: 7px;
+	color: black;
+	}
+
+	.infoitem:hover
+	{
+	background-color: #F9E8D8;
+	}
+
+/* COLUMN TWO */
+	#columntwo
+	{
+	background-color: #F7931E;
+	padding: 0px 0px 4px 0px;
+	position: relative;
+	z-index: 10;
+	}
+
+	#totalhoursbutton a
+	{
+	color: gray;
+	text-decoration: none;
+	}
+
+	#totalhoursbutton a:hover
+	{
+	color: white;
+	}
+
+	.totalhoursbutton
+	{
+	margin-top: 113px;
+	margin-right: 19px;
+	}
+
+	#checkinheader
+	{
+	margin: 15px 0px 12px 0px;
+	color: white;
+	}
+
+	#checkinout
+	{
+	padding: 20px;
+	max-width: 400px;
+	margin: auto;
+	}
+
+	#checkinbutton
+	{
+	color: #56BF90;
+	background-color: white;
+	border: none;
+	margin-bottom: 18px;
+	}
+
+	#checkoutbutton
+	{
+	color: #E75853;
+	background-color: white;
+	border: none;
+	}
+
+	#checkinbutton:hover
+	{
+	background-color: #56BF90;
+	color: white;
+	opacity: 100;
+	}
+
+	#checkoutbutton:hover
+	{
+	background-color: #E75853;
+	color: white;
+	opacity: 100;
+	}
+
+/* COLUMN THREE */
+	#columnthree
+	{
+	background-color: #FBB03B;
+	height: 228px;
+	position: relative;
+	z-index: 10;
+	}
+
+	#upcomingshiftsheader
+	{
+	margin: 15px 0px 25px 0px;
+	color: white;
+	}
+
+	#datetime
+	{
+	width: 120px;
+	margin: auto;
+	}
+
+	#calendar
+	{
+	box-shadow: 4px 6px 4px gray;
+	border-radius: 4px;
+	}
+
+	#upcomingmonth
+	{
+	margin: 0px;
+	padding: 3px;
+	background-color: #E75853;
+	color: white;
+	border-radius: 4px 4px 0px 0px;	
+	}
+
+	#upcomingday
+	{
+	margin: 0px;
+	padding: 5px;
+	font-size: 50px;
+	background-color: white;
+	color: black;
+	border-radius: 0px 0px 4px 4px;
+	}
+
+	#upcomingtime
+	{
+	margin: 15px 0px 0px 3px;
+	padding: 0px;
+	color: black;
+	}
+
+	#editshifts
+	{
+	margin: 15px 4px 0px 0px;
+	}
+
+	#editshifts a
+	{
+	color: gray;
+	text-decoration: none;
+	}
+
+	#editshiftsall a:hover
+	{
+	color: white;
+	}
+
+	#glyphiconshifts
+	{
+	padding-left: 5px;
+	color: gray;
+	}
+
+/* COLUMN FOUR */
+	#columnfour
+	{
+	background-color: #56BF90;
+	position: relative;
+	z-index: 10;
+	}
+
+	#badgesheader
+	{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: white;
+	}
+
+	#badge
+	{
+	margin: auto;
+	width: 120px;
+	}
+
+	#allbadges a
+	{
+	color: gray;
+	text-decoration: none;
+	}
+
+	#allbadges a:hover
+	{
+	color: white;
+	}
+
+	#allbadges
+	{
+	margin: 10px 4px 0px 0px;
+	padding: 0px 0px 12px 0px;
+	}
+
+	#badgestable
+	{
+	overflow-y: scroll;
+	height: 140px;
+	display: block;
+	text-align: center;
+	}
+
+/* COLUMN MAIN */
+	#columnmain
+	{
+	background-color: lightblue;
+	padding-bottom: 67px;
+	}
+
+	#signupheader
+	{
+	position: relative;
+	color: white;
+	margin: 0;
+	padding: 14px 0px 0px 6px;
+	z-index: 3;
+	font-family: "Archivo Black";
+	}
+
+	#selectdate
+	{
+	width: 263px;
+	}
+
+	#selecttype
+	{
+	width: 262px;
+	}
+
+	#timein
+	{
+	margin-right: 10px;
+	}
+
+	#selectdate,
+	#timein,
+	#timeout
+	{
+	border-radius: 5px;
+	}
+
+	#formall
+	{
+	margin: auto;
+	margin-top: 36px;
+	background-color: #4D4D4D;
+	border-radius: 8px;
+	max-width: 304px;
+	padding: 20px;
+	position: relative;
+	z-index: 3;
+	}
+
+	.selectheader
+	{
+	color: white;
+	}
+
+	#treestwo
+	{
+	position: fixed;
+    width: 390px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+    margin-left: 25%;
+    background-color: lightblue;
+	}
+
+	#treesthree
+	{
+	position: fixed;
+    width: 398px;
+    bottom: 0px;
+    left: 340px;
+    z-index: 0;
+    margin-left: 25%;
+    background-color: lightblue;
+	}
+
+#clouds
+	{
+	position: absolute;
+	padding: 100px 0;
+	margin: auto;
+	z-index: 0;
+	}
+
+#cloudstwo
+	{
+	position: absolute;
+	padding: 100px 0;
+	margin: auto;
+	z-index: 3;
+	}
+
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	max-width: 200px;
+	
+	position: relative;
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 70s linear infinite;
+	-moz-animation: moveclouds 70s linear infinite;
+	-o-animation: moveclouds 70s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 60s linear infinite;
+	-moz-animation: moveclouds 60s linear infinite;
+	-o-animation: moveclouds 60s linear infinite;
+}
+
+.x3 {
+	left: -10px; top: -70px;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+	opacity: 0.3; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 88s linear infinite;
+	-moz-animation: moveclouds 88s linear infinite;
+	-o-animation: moveclouds 88s linear infinite;
+}
+
+
+.x5 {
+	left: -180px; top: -60px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 57s linear infinite;
+	-moz-animation: moveclouds 57s linear infinite;
+	-o-animation: moveclouds 57s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+/*****************************
+******************************
+DASHBOARD TWO
+******************************
+*****************************/
+	#columntwoswitch
+	{
+	background-color: #F7931E;
+	padding: 0px 0px 3px 0px;
+	}
+
+	#checkinlink a
+	{
+	color: gray;
+	text-decoration: none;
+	}
+
+	#checkinlink a:hover
+	{
+	color: white;
+	}
+
+	.checkinlink
+	{
+	margin-top: 39px;
+	margin-right: 19px;
+	}
+
+	#totalhours
+	{
+	color: black;
+	font-size: 95px;
+	margin-top: 23px;
+	}
+
+	#totalhoursheader
+	{
+	color: white;
+	margin-top: 15px;
+	}
+
+/*****************************
+******************************
+ADMIN DASHBOARD
+******************************
+*****************************/
+
+	/*****************************
+	NAVIGATION
+	******************************/
+	#adminimage
+	{
+	color: white;
+	}
+
+	.admininfo
+	{
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	}
+
+	.navbutton
+	{
+	color: #4D4D4D;
+	font-family: "Archivo Narrow";
+	font-weight: 800;
+	letter-spacing: 1px;
+	}
+
+	.navbutton:hover
+	{
+	color: white;
+	}
+
+	.adminnavbutton
+	{
+	padding: 16px 0px 7px 0px;
+	background-color:#FBB03B
+	}
+
+	#admindashboardnav
+	{
+	max-width: 1600px;
+	margin: auto;
+	}
+
+	/*****************************
+	CALENDAR PAGE
+	******************************/
+	#calendarpage
+	{
+	max-width: 1300px;
+	margin: auto;
+	}
+
+	.adminheader
+	{
+	font-family: "Archivo Black";
+	}
+
+	#admincalendar
+	{
+	background-color: white;
+	margin: auto;
+	}
+
+	#dayofweek
+	{
+	font-size: 20px;
+	background-color: #56BF90;
+	color: white;
+	}
+
+	#admincalendar td
+	{
+	border: solid gray 1px;
+	padding: 5px 15px 5px 15px;
+	}
+
+	#admincalendar th
+	{
+	border: solid gray 1px;
+	padding: 5px 15px 5px 15px;
+	}
+
+	#calendarscroll
+	{
+	overflow-y: scroll;
+	height: 470px;
+	display: block;
+	}
+
+	/*****************************
+	******************************
+	NEW APPLICANT
+	******************************
+	*****************************/ 
+	#approvebutton
+	{
+	background-color: #56BF90;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	width: 180px;
+	margin: auto;
+	margin-bottom: 5px;
+	padding: 11px 17px 11px 17px;
+	}
+
+	#savebutton
+	{
+	background-color: #E75853;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	width: 180px;
+	margin: auto;
+	margin-bottom: 5px;
+	padding: 11px 17px 11px 17px;
+	}
+
+
+@media(max-width:506px) 
+{
+
+	/*******************
+	POSITIONS
+	********************/
+    .mainheader
+    {
+    font-size: 33px;
+	}
+}
+
+
+
+
+
