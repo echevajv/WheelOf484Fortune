@@ -53,9 +53,7 @@
                 <br>
                 <input name="lastname" type="email" class="form-control" id="inputlastname">
             </div>
-        </form>
         <br>
-        <form class="outreachapp">
             <!--EMAIL INPUT-->
             <div class="form-group">
                 <label>Email</label>
@@ -87,17 +85,13 @@
                 <input class="form-control" id="inputphone" name="phone">
             </div>
             <!--DOB INPUT-->
-            <form class="transportapp">
                 <div class="form-group">
                     <label>Date of Birth</label>
                     <br>
                     <input name="dateofbirth" type="date" class="form-control" id="dateofbirth" >
-            </form>
             <br>
     </div>
-    </form>
     <!--AVAILABILITY-->
-    <form class="outreachapp">
         <div class="form-group">
             <label>What days of the week are you available?</label>
             <br>
@@ -160,9 +154,7 @@
             <input  name="availablewintercheck" type="checkbox" id="winter" value="option4">Winter
         </label>
         </label>
-    </form>
     <br>
-    <form class="outreachapp">
         <div class="form-group">
             <label>Are you vaccinated for Rabies?</label>
             <select name="rabiesquestion" id="selecttype" class="form-control">
@@ -181,11 +173,9 @@
                 <option>Permit 4</option>
             </select>
         </div>
-    </form>
     <br>
 
     <!--EMERGENCY CONTACT-->
-    <form>
         <h3 class="applicationheader" id="emergencyinfo">Emergency Contact Information</h3>
         <br>
         <!--EMERGENCY NAME INPUT-->
@@ -208,7 +198,6 @@
         <!--INTERESTS AND EXPERIENCE-->
         <h3 class="applicationheader" id="additionalinfo">INTERESTS AND EXPERIENCE</h3>
         <br>
-        <form class="outreachapp">
             <div class="form-group">
                 <label>Why are you interested in volunteering as an outreach docent?</label>
                 <textarea name="whyinterestedquestion" class="form-control" rows="5"></textarea>

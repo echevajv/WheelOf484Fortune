@@ -42,7 +42,7 @@
         <h3 class="applicationheader" id="generalinfo">General Information</h3>
         <br>
         <!--NAME INPUT-->
-        <form class="treatmentapp">
+        <form class="treatmentapp" action="thankyou.php" method="post">
             <div class="form-group">
                 <label>First name</label>
                 <br>
@@ -53,9 +53,7 @@
                 <br>
                 <input name="lastname" type="text" class="form-control" id="inputlastname">
             </div>
-        </form>
         <br>
-        <form class="transportapp">
             <!--EMAIL INPUT-->
             <div class="form-group">
                 <label>Email</label>
@@ -87,17 +85,13 @@
                 <input name="phone" class="form-control" id="inputphone">
             </div>
             <!--DOB INPUT-->
-            <form class="transportapp">
                 <div class="form-group">
                     <label>Date of Birth</label>
                     <br>
                     <input name="datofbirth" type="date" class="form-control" id="dateofbirth">
-            </form>
             <br>
     </div>
-    </form>
     <!--AVAILABILITY-->
-    <form class="treatmentapp">
         <div class="form-group">
             <label>What days of the week are you available?</label>
             <br>
@@ -160,9 +154,7 @@
             <input name="availablewintercheck" type="checkbox" id="winter" value="option4">Winter
         </label>
         </label>
-    </form>
     <br>
-    <form class="transportapp">
         <div class="form-group">
             <label>Are you vaccinated for Rabies?</label>
             <select  name="rabiesquestion" id="selecttype" class="form-control">
@@ -181,11 +173,9 @@
                 <option>Permit 4</option>
             </select>
         </div>
-    </form>
     <br>
 
     <!--EMERGENCY CONTACT-->
-    <form>
         <h3 class="applicationheader" id="emergencyinfo">Emergency Contact Information</h3>
         <br>
         <!--EMERGENCY NAME INPUT-->
@@ -208,7 +198,6 @@
         <!--ADDITIONAL REQUIREMENTS-->
         <h3 class="applicationheader" id="additionalinfo">Experience</h3>
         <br>
-        <form class="transportapp">
             <div class="form-group">
                 <label>Please describe any previous medical or veterinary training you have completed.</label>
                 <textarea name="trainingquestion" class="form-control" rows="5"></textarea>
@@ -227,10 +216,8 @@
                 <label>Taking care of animals is a messy job that requires all team members to clean out dirty crates, chop rats or mice for feeding to patients, and collect fecal samples for analysis for example.  Is this something that you foresee struggling with?</label>
                 <textarea name="strigglingquestion" class="form-control" rows="5"></textarea>
             </div>
-        </form>
 
         <!--AVAILABILITY INPUT-->
-        <form class="transportapp">
             <div class="form-group">
                 <label>Handling Skills</label>
                 <br>
@@ -310,9 +297,7 @@
                     <input name="anesthesiacheck" type="checkbox" id="anesthesia" value="option5">Anesthesia
                 </label>
             </div>
-        </form>
 
-        <form class="transportapp">
             <div class="form-group">
                 <label>Special Interests or Hobbies:</label>
                 <textarea name="interestshobbiesquestion" class="form-control" rows="5"></textarea>
@@ -320,6 +305,7 @@
             <br>
             <!--SUBMIT BUTTON-->
             <a href="thankyou.php" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
+	</form>
 </div>
 <!--END COL XS 12-->
 </div>
