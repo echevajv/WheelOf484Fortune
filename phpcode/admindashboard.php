@@ -240,7 +240,9 @@
 						</tr>
 					</table>
 		        </div>
-	    	</div>		
+	    		</div>
+			</div>		
+		</div>
 	<!--END DASHBOARD-->
 </body>
 </html>
