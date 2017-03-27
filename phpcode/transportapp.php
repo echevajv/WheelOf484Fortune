@@ -241,7 +241,7 @@
             <br>
 
             <!--SUBMIT BUTTON-->
-            <a href="thankyou.php" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
+            <a href="thankyou.php" name="submittransport" type="submit" class="btn btn-primary submit" id="submitbutton">Submit</a>
         </form>
 </div>
 <!--END COL XS 12-->
