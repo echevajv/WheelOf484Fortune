@@ -405,9 +405,9 @@ if (isset($_POST['Submission'])) {
                         Thanks for your interest in volunteering with the Wildlife Center of Virginia!</p>
                 </div>
                 <!--END PANEL BODY-->
-                <div class="text-right">
-                    <a href="index.php" class="btn btn-primary" id="backtologinbutton">Back To Login Page</a>
-                </div>
+             	<div class="text-right">
+			<a href="pendingdashboard.html" class="btn btn-primary" id="backtologinbutton">View your dashboard</a>
+		</div>
                 <!--END TEXT RIGHT-->
             </div>
             <!--END LOGIN PANEL-->
