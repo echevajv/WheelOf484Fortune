@@ -104,7 +104,6 @@
 						<label class="checkbox-inline">
 						<input type="checkbox" id="monday" value="option1" name="availablemondaycheck">Mon
 						</label>
-						<input class="form-control" id="mondayavailability" name="availablemonday">
 						<br>
 
 						<label class="checkbox-inline">
