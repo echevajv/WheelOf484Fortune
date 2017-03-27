@@ -162,22 +162,22 @@
 		        <br>
 	            <div class="form-group">
 	                <label>Please briefly describe your relevant hands-on experience with animals, if any. What did you enjoy about the experience? What did you dislike?</label>
-	                <textarea class="form-control" name="likedislike" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer1" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Carnivorous patients are sometimes unable to eat food items whole due to their injuries; you may be required to cut and divide dead rodents, chicks, and fishes into smaller portions. Are you comfortable handling dead animals for this purpose?</label>
-	                <textarea class="form-control" name="deadanimals" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer2" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Prior to release from the Wildlife Center, many predatory birds are presented with live mice in order to evaluate their ability to capture prey in a controlled and measurable environment. What is your opinion on using live-prey for this purpose?</label>
-	                <textarea class="form-control" name="liveprey" rows="5"></textarea>
+	                <textarea class="form-control" name="answer3" rows="5"></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Wildlife rehabilitation requires daily outdoor work -- year-round and regardless of weather conditions. Are you able to work outside during all seasons? If not, what are your limitations?</label>
-	                <textarea class="form-control" name="workoutside" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer4" rows="5" required></textarea>
 	            </div>
         	
 	            <div class="form-group">
@@ -230,22 +230,22 @@
 	        
 	            <div class="form-group">
 	                <label>Do you belong to any animal rights groups (PETA, The Humane Society, etc.)? If so, which ones?</label>
-	                <textarea class="form-control" name="animalrightsgroups" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer5" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>What do you hope to learn or accomplish by volunteering at the Wildlife Center of Virginia?</label>
-	                <textarea class="form-control" name="learnaccomplish" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer6" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Please describe an environmental or wildlife-based issue you feel passionately about, and why:</label>
-	                <textarea class="form-control" name="issuesquestion" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer7" rows="5" required></textarea>
 	            </div>
 	            <br>
 	            <div class="form-group">
 	                <label>Is there anything else that you’d like us to know about yourself or your experience?</label>
-	                <textarea class="form-control" name="otherthings" rows="5" required></textarea>
+	                <textarea class="form-control" name="answer8" rows="5" required></textarea>
 	            </div>
 	            <br>
 
