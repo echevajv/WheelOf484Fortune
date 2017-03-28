@@ -20,7 +20,7 @@
         <div class="col-xs-12">
             <div class="backbuttonapp" id="back">
                 <div class="col-xs-12 text-left">
-                    <a href="dashboard.html" id="backbuttonapp"><strong>Back</strong></a>
+                    <a href="dashboard.php" id="backbuttonapp"><strong>Back</strong></a>
                 </div>
                 <!--END COL XS 12-->
             </div>
