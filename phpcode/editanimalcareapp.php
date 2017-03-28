@@ -145,10 +145,10 @@
 	           	<label>Season availability (check all for year round)</label>
 	                <br>
 	                	<div>
-							<label class="checkbox-inline">
-							<input type="checkbox" id="monday">Spring
-							</label>
-							<br>
+						<label class="checkbox-inline">
+						<input type="checkbox" id="monday">Spring
+						</label>
+						<br>
 						</div>
 
 						<label class="checkbox-inline">
@@ -163,8 +163,7 @@
 
 						<label class="checkbox-inline">
 						<input type="checkbox" id="thusday">Winter
-						</label>
-					</label>	
+						</label>	
 	        </form>
 	        <br>
 	        <form class="animalcareapp">
