@@ -25,23 +25,23 @@
 				<p id="adminimage" class="navbutton">JANE DOE</p>
 	        </div>
 
-	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columntwoadmin">
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttoncalendar" id="columntwoadmin">
 				<p><a href="admindashboard.php" id="calendarbutton" class="navbuttoncurrent">CALENDAR</a></p>
 	        </div>
 
-	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnthreeadmin">
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttoninfo" id="columnthreeadmin">
 				<p><a href="#" id="volunteerbutton" class="navbutton">VOLUNTEER INFO</a></p>
 	        </div>
 
-	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfouradmin">
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttonforms" id="columnfouradmin">
 				<p><a href="#" id="formsbutton" class="navbutton">EDIT FORMS</a></p>
 	        </div>
 
-	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton" id="columnfiveadmin">
+	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttonmessage" id="columnfiveadmin">
 				<p><a href="sendmessage.php" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
 	        </div>
 
-	       	<div class="col-xs-12 col-sm-2 text-center adminnavbutton" id="columnsixadmin">
+	       	<div class="col-xs-12 col-sm-2 text-center adminnavbutton adminnavbuttonapplicant" id="columnsixadmin">
 				<p><a href="newapplicants.php" id="newapplicantbutton" class="navbutton">NEW APPLICANTS</a></p>
 	        </div>
 	    </div>
