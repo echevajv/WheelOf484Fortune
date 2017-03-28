@@ -295,6 +295,10 @@ if (isset($_POST['Submission'])) {
     $LastUpdatedBy = 'Amaana';
     $LastUpdated = '2017-03-16';
 
+    $EmergencyName= sanitize_input($_POST["emergencyname"]);
+    $EmergencyPhone= sanitize_input($_POST["emergencyphone"]);
+    $EmergencyRel= sanitize_input($_POST["emergencyrelationship"]);
+
     $ReptileRoom = "";
     $RepRoomSoakDay = "";
     $SnakeFeedingDay = "";
@@ -394,6 +398,13 @@ if (isset($_POST['Submission'])) {
     $stmt->execute();
     echo $stmt->error;
 
+    // Insert into EmergencyContact table
+    $stmt = $conn->prepare("INSERT INTO EmergencyContact(PERSONID, NAME, PHONE, RELATIONSHIP, LASTUPDATEDBY, LASTUPDATED) VALUES (?,?,?,?,?,?);");
+
+    $stmt->bind_param("isssss", $PersonID, $EmergencyName, $EmergencyPhone, $EmergencyRel, $LastUpdatedBy, $LastUpdated);
+    $stmt->execute();
+    echo $stmt->error;
+
     $conn->close();
 
 }
@@ -428,11 +439,11 @@ if (isset($_POST['Submission'])) {
         <div class="col-xs-12">
             <div class="login-panel panel panel-default">
                 <div class="panel-heading" id="panelheading">Thank You For Applying!</div>
-                <div class="panel-body">POST STUFF
+                <div class="panel-body">
                     <table>
                         <?php
                         // show all post variables
-
+/*
                         foreach ($_POST as $key => $value) {
                             echo "<tr>";
                             echo "<td>";
@@ -443,7 +454,7 @@ if (isset($_POST['Submission'])) {
                             echo "</td>";
                             echo "</tr>";
                         }
-
+*/
 
 
                         ?>
