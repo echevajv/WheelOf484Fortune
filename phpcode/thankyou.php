@@ -469,7 +469,7 @@ if (isset($_POST['Submission'])) {
                 </div>
                 <!--END PANEL BODY-->
                 <div class="text-right">
-                    <a href="pendingdashboard.php" class="btn btn-primary" id="backtologinbutton">Go to Dashboard</a>
+                    <a href="pendingdashboard.php" class="btn btn-primary" id="backtologinbutton">View your Dashboard</a>
                 </div>
                 <!--END TEXT RIGHT-->
             </div>
