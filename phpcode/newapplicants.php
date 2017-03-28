@@ -36,6 +36,7 @@ session_start();
         <img src="images/trees.png" id="treespositions">
     </div>
 <!--ALL COLUMNS-->
+
 <div class="container-fluid" id="admindashboard">
     <div class="row">
 
@@ -66,7 +67,13 @@ session_start();
         </div>
     </div>
 </div>
-
+    <div class="container-fluid" class="adminmainheader">
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h1 class="adminnavheading">NEW APPLICANTS</h1>
+            </div>
+        </div>
+    </div>
 <!--THANK YOU BOX-->
 <div id="allcontentapplicant">
     <div class="row">
