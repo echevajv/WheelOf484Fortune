@@ -843,6 +843,18 @@ DASHBOARD
 
 /*****************************
 ******************************
+EDIT USER INFORMATION
+******************************
+*****************************/
+
+	#careappeditinfotext
+	{
+	font-size: 17px;
+	text-align: center;
+	}
+
+/*****************************
+******************************
 PENDING DASHBOARD
 ******************************
 *****************************/
@@ -1059,9 +1071,10 @@ ADMIN DASHBOARD
 ******************************
 *****************************/
 
-	.adminmainheader
+	#adminclouds
 	{
-
+	position: fixed;
+	margin-top: 120px;
 	}
 
 	.adminnavheading
@@ -1069,6 +1082,7 @@ ADMIN DASHBOARD
 	margin-top: 8px;
 	max-width: 2000px;
 	font-family: "archivo black";
+	color: #4D4D4D;
 	}
 
 	/*****************************
@@ -1174,9 +1188,10 @@ ADMIN DASHBOARD
 	height: 545px;
 	display: block;
 	border-radius: 8px;
-	max-width: 990px;
+	max-width: 900px;
 	margin: auto;
 	margin-top: 12px;
+	margin-bottom: 20px;
 	}
 
 	.admindashboardheader
@@ -1196,15 +1211,90 @@ ADMIN DASHBOARD
 	padding: 15px 20px 20px 20px;
 	}
 
-	#volunteerchoice
+	#volunteercalendarchoice
 	{
 	background-color: white;
 	padding: 11px 10px 10px 10px;
 	border-radius: 8px;
-	max-width: 730px;
+	max-width: 720px;
 	margin: auto;
-	margin-top: 0px;
 	}
+
+	/*****************************
+	VOUNTEER INFO
+	******************************/
+	#allvolunteerinfo
+	{
+	max-width: 1100px;
+	margin: auto;
+	margin-top: 16px;
+	}
+
+	#volunteerinfotable td
+	{
+	border-top: solid gray 1px;
+	padding: 5px 15px 5px 15px;
+	}
+
+	#volunteerinfotable th
+	{
+	padding: 5px 15px 5px 15px;
+	}
+
+	#volunteerinfoscroll
+	{
+	overflow-y: scroll;
+	height: 445px;
+	display: block;
+	border-radius: 8px;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+	}
+
+	#volunteerinfohours
+	{
+	overflow-y: scroll;
+	display: block;
+	border-radius: 8px;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 40px;
+	}
+
+	#volunteerinfotable
+	{
+	background-color: white;
+	margin: auto;
+	}
+
+	.monthyear
+	{
+	color: #FBB03B;
+	margin-top: 12px;
+	}
+
+	#dayofweek
+	{
+	font-size: 20px;
+	background-color: #4D4D4D;
+	color: white;
+	}
+
+	.mainnamesearch
+	{
+	background-color: #4D4D4D;
+	color: white;
+	font-size: 18px;
+	}
+
+	#searchbarvolunteers
+	{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin: auto;
+	}
+
 
 	/*****************************
 	******************************
@@ -1342,6 +1432,7 @@ ADMIN DASHBOARD
 	margin-top: 12px;
 	background-color: white;
 	border-radius: 8px;
+	margin-bottom: 20px;
 	}
 
 	#sendmessage
@@ -1379,6 +1470,40 @@ ADMIN DASHBOARD
 	margin-left: -15px;
 	opacity: 0.7;
 	z-index: 12;
+	}
+}
+
+@media(max-width: 413px)
+{
+	#upcomingshiftsheader
+	{
+	margin: 15px 0px 26px 0px;
+	color: white;
+	font-size: 17px;
+	}
+}
+
+@media(max-width: 767px)
+{
+	.adminnavbuttonapplicant
+	{
+	border-top: solid #4D4D4D 1px;
+	}
+
+	.adminnavbuttoncalendar
+	{
+	border-bottom: solid #4D4D4D 1px;
+	border-right: solid #4D4D4D 1px;
+	}
+
+	.adminnavbuttoninfo
+	{
+	border-bottom: solid #4D4D4D 1px;
+	}
+
+	.adminnavbuttonforms
+	{
+	border-right: solid #4D4D4D 1px;
 	}
 }
 
