@@ -15,7 +15,7 @@
 <!--DASHBOARD-->
 	<div class="row">
 		<div class="col-xs-12 text-left" id="logout">
-			<a href="index.html" id="logoutbutton"><strong>Log Out</strong></a>
+			<a href="index.php" id="logoutbutton"><strong>Log Out</strong></a>
 		</div>
 		<!--END LOGOUT-->
 	</div>
@@ -35,10 +35,10 @@
 				<div id="editinfo">
 					<h4 class="text-center volunteerinfoheader"><strong>Volunteer Information</strong></h4>
 					<br>
-					<a href="editanimalcareapp.html#generalinfo"><h4 id="volunteerinfo" class="infoitem">General<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
-					<a href="editanimalcareapp.html#emergencyinfo"><h4 id="emergencyinfo" class="infoitem">Emergency<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
-					<a href="editanimalcareapp.html#experienceinfo"><h4 id="experienceinfo" class="infoitem">Experience<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
-					<a href="editanimalcareapp.html#additionalinfo"><h4 id="experienceinfo" class="infoitem">Documents<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#generalinfo"><h4 id="volunteerinfo" class="infoitem">General<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#emergencyinfo"><h4 id="emergencyinfo" class="infoitem">Emergency<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#experienceinfo"><h4 id="experienceinfo" class="infoitem">Experience<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
+					<a href="editanimalcareapp.php#additionalinfo"><h4 id="experienceinfo" class="infoitem">Documents<span class="glyphicon glyphicon-edit" aria-hidden="true"></span></h4></a>
 				</div>
 				<!--END EDIT INFO-->
 			</div>
