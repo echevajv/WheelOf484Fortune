@@ -87,144 +87,9 @@
 					        </form>
 				        </th>
 					</tr>
-					<tr>
-						<td class="mainnamesearch">Doe</td>
-						<td class="mainnamesearch">Jane</td>
-						<td class="mainnamesearch">Animal Care</td>
-						<td class="mainnamesearch"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td id="calendarlastname">Doe</td>
-						<td id="calendarfirstname">Jane</td>
-						<td id="calendarposition">Animal Care</td>
-						<td id="calendartime"><a href="#">View</a></td>
-					</tr>
+
+                        <?php PopulateTable('confirmed') ?>
+
 					</table>
 				</div>
 			</div>
@@ -265,3 +130,36 @@
 	</div>
 </body>
 </html>
+<?php
+Function PopulateTable ($status){
+    $server = "localhost";
+    $user = "root";
+    $password = "sqlpass";
+    $database = "wildlife";
+    $query = "Select PersonID, concat_ws(', ', lastname, firstname) as name, dateapplied from person where status like '$status' order by lastname;";
+    $con = mysql_connect($server, $user, $password);
+    if (!empty($con)){
+        //echo "Connected Successfully";
+        if (mysql_select_db($database, $con)){
+            //echo "Selected database successfully";
+            $resultset = mysql_query($query, $con);
+            if ($resultset==true){
+                //echo "resultset successfull";
+                while ($row = mysql_fetch_array($resultset)) {
+                    //print("<table border=0 class=stylec1>");
+                    $id = $row["PersonID"];
+                    $name = $row["name"];
+                    $dateapplied = $row["dateapplied"];
+
+                    print("<tr>");
+                    //print("<td>$id</td>");
+                    print("<td>$name</td>");
+                    //print("<td>$dateapplied</td>");
+                    print('<td><a href="NewApplicantAnimalCare.php?id='.$id.'">View</td>');
+                    print("</tr>");
+                }
+            }
+        }
+    }
+}
+?>
