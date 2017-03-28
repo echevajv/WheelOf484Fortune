@@ -119,27 +119,3 @@ Function PopulateTable ($status){
     }
 }
 ?>
-<?php
-function sendDBCommand($sql){
-    //insert into database
-    $servername = "localhost";
-    $username = "root";
-    $password = "sqlpass";
-    $dbname = "wildlife";
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    if ($conn->query($sql) === TRUE) {
-        echo "Volunteer Info Updated";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
-    $conn->close();
-}
-?>
