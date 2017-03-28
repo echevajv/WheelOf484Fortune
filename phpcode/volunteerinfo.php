@@ -38,11 +38,11 @@
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttoncalendar" id="columntwoadmin">
-				<p><a href="admindashboard.html" id="calendarbutton" class="navbutton">CALENDAR</a></p>
+				<p><a href="admindashboard.php" id="calendarbutton" class="navbutton">CALENDAR</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttoninfo" id="columnthreeadmin">
-				<p><a href="volunteerinfo.html" id="volunteerbutton" class="navbuttoncurrent">VOLUNTEER INFO</a></p>
+				<p><a href="volunteerinfo.php" id="volunteerbutton" class="navbuttoncurrent">VOLUNTEER INFO</a></p>
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttonforms" id="columnfouradmin">
@@ -50,11 +50,11 @@
 	        </div>
 
 	        <div class="col-xs-6 col-sm-2 text-center adminnavbutton adminnavbuttonmessage" id="columnfiveadmin">
-				<p><a href="sendmessage.html" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
+				<p><a href="sendmessage.php" id="messagebutton" class="navbutton">SEND MESSAGE</a></p>
 	        </div>
 
 	       	<div class="col-xs-12 col-sm-2 text-center adminnavbutton adminnavbuttonapplicant" id="columnsixadmin">
-				<p><a href="newapplicants.html" id="newapplicantbutton" class="navbutton">NEW APPLICANTS</a></p>
+				<p><a href="newapplicants.php" id="newapplicantbutton" class="navbutton">NEW APPLICANTS</a></p>
 	        </div>
 	    </div>
     </div>
